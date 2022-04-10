@@ -1,0 +1,2145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root devtype="Сириус-ПДС" devver="1.04" filetype="Дерево" filever="1">
+<section name="Контроль" viewer="2c">
+	<group name="Входы">
+		<group name="Модуль 1B" visible="((Config() &amp; 0xFF00) &gt; 0x100) &amp;&amp; ((Config() &amp; 0xFF00) &lt; 0xd00)">
+			<param text="Вход 1В-1" expr1="iif(Control.Optron1BX1_0,1,0)" expr2="val('CommonSets.InputB1.0.Mux', CommonSets.InputB1.0.Mux)"/>
+			<param text="Вход 1В-2" expr1="iif(Control.Optron1BX1_1,1,0)" expr2="val('CommonSets.InputB1.1.Mux', CommonSets.InputB1.1.Mux)"/>
+			<param text="Вход 1В-3" expr1="iif(Control.Optron1BX1_2,1,0)" expr2="val('CommonSets.InputB1.2.Mux', CommonSets.InputB1.2.Mux)"/>
+			<param text="Вход 1В-4" expr1="iif(Control.Optron1BX1_3,1,0)" expr2="val('CommonSets.InputB1.3.Mux', CommonSets.InputB1.3.Mux)"/>
+			<param text="Вход 1В-5" expr1="iif(Control.Optron1BX1_4,1,0)" expr2="val('CommonSets.InputB1.4.Mux', CommonSets.InputB1.4.Mux)"/>
+			<param text="Вход 1В-6" expr1="iif(Control.Optron1BX1_5,1,0)" expr2="val('CommonSets.InputB1.5.Mux', CommonSets.InputB1.5.Mux)"/>
+			<param text="Вход 1В-7" expr1="iif(Control.Optron1BX1_6,1,0)" expr2="val('CommonSets.InputB1.6.Mux', CommonSets.InputB1.6.Mux)"/>
+			<param text="Вход 1В-8" expr1="iif(Control.Optron1BX1_7,1,0)" expr2="val('CommonSets.InputB1.7.Mux', CommonSets.InputB1.7.Mux)"/>
+			<param text="Вход 1В-9" expr1="iif(Control.Optron1BX1_8,1,0)" expr2="val('CommonSets.InputB1.8.Mux', CommonSets.InputB1.8.Mux)"/>
+			<param text="Вход 1В-10" expr1="iif(Control.Optron1BX1_9,1,0)" expr2="val('CommonSets.InputB1.9.Mux', CommonSets.InputB1.9.Mux)"/>
+			<param text="Вход 1В-11" expr1="iif(Control.Optron1BX1_10,1,0)" expr2="val('CommonSets.InputB1.10.Mux', CommonSets.InputB1.10.Mux)"/>
+			<param text="Вход 1В-12" expr1="iif(Control.Optron1BX1_11,1,0)" expr2="val('CommonSets.InputB1.11.Mux', CommonSets.InputB1.11.Mux)"/>
+			<param text="Вход 1В-13" expr1="iif(Control.Optron1BX1_12,1,0)" expr2="val('CommonSets.InputB1.12.Mux', CommonSets.InputB1.12.Mux)"/>
+			<param text="Вход 1В-14" expr1="iif(Control.Optron1BX1_13,1,0)" expr2="val('CommonSets.InputB1.13.Mux', CommonSets.InputB1.13.Mux)"/>
+			<param text="Вход 1В-15" expr1="iif(Control.Optron1BX1_14,1,0)" expr2="val('CommonSets.InputB1.14.Mux', CommonSets.InputB1.14.Mux)" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)"/>
+			<param text="Вход 1В-16" expr1="iif(Control.Optron1BX1_15,1,0)" expr2="val('CommonSets.InputB1.15.Mux', CommonSets.InputB1.15.Mux)" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)"/>
+			<param text="Вход 1В-17" expr1="iif(Control.Optron1BX2_0,1,0)" expr2="val('CommonSets.InputB1.16.Mux', CommonSets.InputB1.16.Mux)" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)"/>
+			<param text="Вход 1В-18" expr1="iif(Control.Optron1BX2_1,1,0)" expr2="val('CommonSets.InputB1.17.Mux', CommonSets.InputB1.17.Mux)" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)"/>
+			<param text="Вход 1В-19" expr1="iif(Control.Optron1BX2_2,1,0)" expr2="val('CommonSets.InputB1.18.Mux', CommonSets.InputB1.18.Mux)" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)"/>
+			<param text="Вход 1В-20" expr1="iif(Control.Optron1BX2_3,1,0)" expr2="val('CommonSets.InputB1.19.Mux', CommonSets.InputB1.19.Mux)" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)"/>
+			<param text="Вход 1В-21" expr1="iif(Control.Optron1BX2_4,1,0)" expr2="val('CommonSets.InputB1.20.Mux', CommonSets.InputB1.20.Mux)" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)"/>
+		</group>
+		<group name="Модуль 2B" visible="((Config() &amp; 0xFF00) &gt; 0x400) &amp;&amp; ((Config() &amp; 0xFF00) &lt; 0xd00)">
+			<param text="Вход 2B-1" expr1="iif(Control.Optron2BX1_0,1,0)" expr2="val('CommonSets.InputB2.0.Mux', CommonSets.InputB2.0.Mux)"/>
+			<param text="Вход 2B-2" expr1="iif(Control.Optron2BX1_1,1,0)" expr2="val('CommonSets.InputB2.1.Mux', CommonSets.InputB2.1.Mux)"/>
+			<param text="Вход 2B-3" expr1="iif(Control.Optron2BX1_2,1,0)" expr2="val('CommonSets.InputB2.2.Mux', CommonSets.InputB2.2.Mux)"/>
+			<param text="Вход 2B-4" expr1="iif(Control.Optron2BX1_3,1,0)" expr2="val('CommonSets.InputB2.3.Mux', CommonSets.InputB2.3.Mux)"/>
+			<param text="Вход 2B-5" expr1="iif(Control.Optron2BX1_4,1,0)" expr2="val('CommonSets.InputB2.4.Mux', CommonSets.InputB2.4.Mux)"/>
+			<param text="Вход 2B-6" expr1="iif(Control.Optron2BX1_5,1,0)" expr2="val('CommonSets.InputB2.5.Mux', CommonSets.InputB2.5.Mux)"/>
+			<param text="Вход 2B-7" expr1="iif(Control.Optron2BX1_6,1,0)" expr2="val('CommonSets.InputB2.6.Mux', CommonSets.InputB2.6.Mux)"/>
+			<param text="Вход 2B-8" expr1="iif(Control.Optron2BX1_7,1,0)" expr2="val('CommonSets.InputB2.7.Mux', CommonSets.InputB2.7.Mux)"/>
+			<param text="Вход 2B-9" expr1="iif(Control.Optron2BX1_8,1,0)" expr2="val('CommonSets.InputB2.8.Mux', CommonSets.InputB2.8.Mux)"/>
+			<param text="Вход 2B-10" expr1="iif(Control.Optron2BX1_9,1,0)" expr2="val('CommonSets.InputB2.9.Mux', CommonSets.InputB2.9.Mux)"/>
+			<param text="Вход 2B-11" expr1="iif(Control.Optron2BX1_10,1,0)" expr2="val('CommonSets.InputB2.10.Mux', CommonSets.InputB2.10.Mux)"/>
+			<param text="Вход 2B-12" expr1="iif(Control.Optron2BX1_11,1,0)" expr2="val('CommonSets.InputB2.11.Mux', CommonSets.InputB2.11.Mux)"/>
+			<param text="Вход 2B-13" expr1="iif(Control.Optron2BX1_12,1,0)" expr2="val('CommonSets.InputB2.12.Mux', CommonSets.InputB2.12.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 2B-14" expr1="iif(Control.Optron2BX1_13,1,0)" expr2="val('CommonSets.InputB2.13.Mux', CommonSets.InputB2.13.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 2B-15" expr1="iif(Control.Optron2BX1_14,1,0)" expr2="val('CommonSets.InputB2.14.Mux', CommonSets.InputB2.14.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 2B-16" expr1="iif(Control.Optron2BX1_15,1,0)" expr2="val('CommonSets.InputB2.15.Mux', CommonSets.InputB2.15.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 2B-17" expr1="iif(Control.Optron2BX2_0,1,0)" expr2="val('CommonSets.InputB2.16.Mux', CommonSets.InputB2.16.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 2B-18" expr1="iif(Control.Optron2BX2_1,1,0)" expr2="val('CommonSets.InputB2.17.Mux', CommonSets.InputB2.17.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 2B-19" expr1="iif(Control.Optron2BX2_2,1,0)" expr2="val('CommonSets.InputB2.18.Mux', CommonSets.InputB2.18.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 2B-20" expr1="iif(Control.Optron2BX2_3,1,0)" expr2="val('CommonSets.InputB2.19.Mux', CommonSets.InputB2.19.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 2B-21" expr1="iif(Control.Optron2BX2_4,1,0)" expr2="val('CommonSets.InputB2.20.Mux', CommonSets.InputB2.20.Mux)" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00"/>
+		</group>
+		<group name="Модуль 3B" visible="((Config() &amp; 0xFF00) &gt; 0x800) &amp;&amp; ((Config() &amp; 0xFF00) &lt; 0xc00)">
+			<param text="Вход 3B-1" expr1="iif(Control.Optron3BX1_0,1,0)" expr2="val('CommonSets.InputB3.0.Mux', CommonSets.InputB3.0.Mux)"/>
+			<param text="Вход 3B-2" expr1="iif(Control.Optron3BX1_1,1,0)" expr2="val('CommonSets.InputB3.1.Mux', CommonSets.InputB3.1.Mux)"/>
+			<param text="Вход 3B-3" expr1="iif(Control.Optron3BX1_2,1,0)" expr2="val('CommonSets.InputB3.2.Mux', CommonSets.InputB3.2.Mux)"/>
+			<param text="Вход 3B-4" expr1="iif(Control.Optron3BX1_3,1,0)" expr2="val('CommonSets.InputB3.3.Mux', CommonSets.InputB3.3.Mux)"/>
+			<param text="Вход 3B-5" expr1="iif(Control.Optron3BX1_4,1,0)" expr2="val('CommonSets.InputB3.4.Mux', CommonSets.InputB3.4.Mux)"/>
+			<param text="Вход 3B-6" expr1="iif(Control.Optron3BX1_5,1,0)" expr2="val('CommonSets.InputB3.5.Mux', CommonSets.InputB3.5.Mux)"/>
+			<param text="Вход 3B-7" expr1="iif(Control.Optron3BX1_6,1,0)" expr2="val('CommonSets.InputB3.6.Mux', CommonSets.InputB3.6.Mux)"/>
+			<param text="Вход 3B-8" expr1="iif(Control.Optron3BX1_7,1,0)" expr2="val('CommonSets.InputB3.7.Mux', CommonSets.InputB3.7.Mux)"/>
+			<param text="Вход 3B-9" expr1="iif(Control.Optron3BX1_8,1,0)" expr2="val('CommonSets.InputB3.8.Mux', CommonSets.InputB3.8.Mux)"/>
+			<param text="Вход 3B-10" expr1="iif(Control.Optron3BX1_9,1,0)" expr2="val('CommonSets.InputB3.9.Mux', CommonSets.InputB3.9.Mux)"/>
+			<param text="Вход 3B-11" expr1="iif(Control.Optron3BX1_10,1,0)" expr2="val('CommonSets.InputB3.10.Mux', CommonSets.InputB3.10.Mux)"/>
+			<param text="Вход 3B-12" expr1="iif(Control.Optron3BX1_11,1,0)" expr2="val('CommonSets.InputB3.11.Mux', CommonSets.InputB3.11.Mux)"/>
+			<param text="Вход 3B-13" expr1="iif(Control.Optron3BX1_12,1,0)" expr2="val('CommonSets.InputB3.12.Mux', CommonSets.InputB3.12.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 3B-14" expr1="iif(Control.Optron3BX1_13,1,0)" expr2="val('CommonSets.InputB3.13.Mux', CommonSets.InputB3.13.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 3B-15" expr1="iif(Control.Optron3BX1_14,1,0)" expr2="val('CommonSets.InputB3.14.Mux', CommonSets.InputB3.14.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 3B-16" expr1="iif(Control.Optron3BX1_15,1,0)" expr2="val('CommonSets.InputB3.15.Mux', CommonSets.InputB3.15.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 3B-17" expr1="iif(Control.Optron3BX2_0,1,0)" expr2="val('CommonSets.InputB3.16.Mux', CommonSets.InputB3.16.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 3B-18" expr1="iif(Control.Optron3BX2_1,1,0)" expr2="val('CommonSets.InputB3.17.Mux', CommonSets.InputB3.17.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 3B-19" expr1="iif(Control.Optron3BX2_2,1,0)" expr2="val('CommonSets.InputB3.18.Mux', CommonSets.InputB3.18.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 3B-20" expr1="iif(Control.Optron3BX2_3,1,0)" expr2="val('CommonSets.InputB3.19.Mux', CommonSets.InputB3.19.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 3B-21" expr1="iif(Control.Optron3BX2_4,1,0)" expr2="val('CommonSets.InputB3.20.Mux', CommonSets.InputB3.20.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+		</group>
+		<group name="Модуль 4B" visible="(Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+			<param text="Вход 4B-1" expr1="iif(Control.Optron4BX1_0,1,0)" expr2="val('CommonSets.InputB4.0.Mux', CommonSets.InputB4.0.Mux)"/>
+			<param text="Вход 4B-2" expr1="iif(Control.Optron4BX1_1,1,0)" expr2="val('CommonSets.InputB4.1.Mux', CommonSets.InputB4.1.Mux)"/>
+			<param text="Вход 4B-3" expr1="iif(Control.Optron4BX1_2,1,0)" expr2="val('CommonSets.InputB4.2.Mux', CommonSets.InputB4.2.Mux)"/>
+			<param text="Вход 4B-4" expr1="iif(Control.Optron4BX1_3,1,0)" expr2="val('CommonSets.InputB4.3.Mux', CommonSets.InputB4.3.Mux)"/>
+			<param text="Вход 4B-5" expr1="iif(Control.Optron4BX1_4,1,0)" expr2="val('CommonSets.InputB4.4.Mux', CommonSets.InputB4.4.Mux)"/>
+			<param text="Вход 4B-6" expr1="iif(Control.Optron4BX1_5,1,0)" expr2="val('CommonSets.InputB4.5.Mux', CommonSets.InputB4.5.Mux)"/>
+			<param text="Вход 4B-7" expr1="iif(Control.Optron4BX1_6,1,0)" expr2="val('CommonSets.InputB4.6.Mux', CommonSets.InputB4.6.Mux)"/>
+			<param text="Вход 4B-8" expr1="iif(Control.Optron4BX1_7,1,0)" expr2="val('CommonSets.InputB4.7.Mux', CommonSets.InputB4.7.Mux)"/>
+			<param text="Вход 4B-9" expr1="iif(Control.Optron4BX1_8,1,0)" expr2="val('CommonSets.InputB4.8.Mux', CommonSets.InputB4.8.Mux)"/>
+			<param text="Вход 4B-10" expr1="iif(Control.Optron4BX1_9,1,0)" expr2="val('CommonSets.InputB4.9.Mux', CommonSets.InputB4.9.Mux)"/>
+			<param text="Вход 4B-11" expr1="iif(Control.Optron4BX1_10,1,0)" expr2="val('CommonSets.InputB4.10.Mux', CommonSets.InputB4.10.Mux)"/>
+			<param text="Вход 4B-12" expr1="iif(Control.Optron4BX1_11,1,0)" expr2="val('CommonSets.InputB4.11.Mux', CommonSets.InputB4.11.Mux)"/>
+			<param text="Вход 4B-13" expr1="iif(Control.Optron4BX1_12,1,0)" expr2="val('CommonSets.InputB4.12.Mux', CommonSets.InputB4.12.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 4B-14" expr1="iif(Control.Optron4BX1_13,1,0)" expr2="val('CommonSets.InputB4.13.Mux', CommonSets.InputB4.13.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 4B-15" expr1="iif(Control.Optron4BX1_14,1,0)" expr2="val('CommonSets.InputB4.14.Mux', CommonSets.InputB4.14.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 4B-16" expr1="iif(Control.Optron4BX1_15,1,0)" expr2="val('CommonSets.InputB4.15.Mux', CommonSets.InputB4.15.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 4B-17" expr1="iif(Control.Optron4BX2_0,1,0)" expr2="val('CommonSets.InputB4.16.Mux', CommonSets.InputB4.16.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 4B-18" expr1="iif(Control.Optron4BX2_1,1,0)" expr2="val('CommonSets.InputB4.17.Mux', CommonSets.InputB4.17.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 4B-19" expr1="iif(Control.Optron4BX2_2,1,0)" expr2="val('CommonSets.InputB4.18.Mux', CommonSets.InputB4.18.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 4B-20" expr1="iif(Control.Optron4BX2_3,1,0)" expr2="val('CommonSets.InputB4.19.Mux', CommonSets.InputB4.19.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Вход 4B-21" expr1="iif(Control.Optron4BX2_4,1,0)" expr2="val('CommonSets.InputB4.20.Mux', CommonSets.InputB4.20.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+		</group>
+		<group name="Модуль 5B" visible="(Config() &amp; 0xFF00) == 0xb00">
+			<param text="Вход 5B-1" expr1="iif(Control.Optron5BX1_0,1,0)" expr2="val('CommonSets.InputB5.0.Mux', CommonSets.InputB5.0.Mux)"/>
+			<param text="Вход 5B-2" expr1="iif(Control.Optron5BX1_1,1,0)" expr2="val('CommonSets.InputB5.1.Mux', CommonSets.InputB5.1.Mux)"/>
+			<param text="Вход 5B-3" expr1="iif(Control.Optron5BX1_2,1,0)" expr2="val('CommonSets.InputB5.2.Mux', CommonSets.InputB5.2.Mux)"/>
+			<param text="Вход 5B-4" expr1="iif(Control.Optron5BX1_3,1,0)" expr2="val('CommonSets.InputB5.3.Mux', CommonSets.InputB5.3.Mux)"/>
+			<param text="Вход 5B-5" expr1="iif(Control.Optron5BX1_4,1,0)" expr2="val('CommonSets.InputB5.4.Mux', CommonSets.InputB5.4.Mux)"/>
+			<param text="Вход 5B-6" expr1="iif(Control.Optron5BX1_5,1,0)" expr2="val('CommonSets.InputB5.5.Mux', CommonSets.InputB5.5.Mux)"/>
+			<param text="Вход 5B-7" expr1="iif(Control.Optron5BX1_6,1,0)" expr2="val('CommonSets.InputB5.6.Mux', CommonSets.InputB5.6.Mux)"/>
+			<param text="Вход 5B-8" expr1="iif(Control.Optron5BX1_7,1,0)" expr2="val('CommonSets.InputB5.7.Mux', CommonSets.InputB5.7.Mux)"/>
+			<param text="Вход 5B-9" expr1="iif(Control.Optron5BX1_8,1,0)" expr2="val('CommonSets.InputB5.8.Mux', CommonSets.InputB5.8.Mux)"/>
+			<param text="Вход 5B-10" expr1="iif(Control.Optron5BX1_9,1,0)" expr2="val('CommonSets.InputB5.9.Mux', CommonSets.InputB5.9.Mux)"/>
+			<param text="Вход 5B-11" expr1="iif(Control.Optron5BX1_10,1,0)" expr2="val('CommonSets.InputB5.10.Mux', CommonSets.InputB5.10.Mux)"/>
+			<param text="Вход 5B-12" expr1="iif(Control.Optron5BX1_11,1,0)" expr2="val('CommonSets.InputB5.11.Mux', CommonSets.InputB5.11.Mux)"/>
+			<param text="Вход 5B-13" expr1="iif(Control.Optron5BX1_12,1,0)" expr2="val('CommonSets.InputB5.12.Mux', CommonSets.InputB5.12.Mux)"/>
+			<param text="Вход 5B-14" expr1="iif(Control.Optron5BX1_13,1,0)" expr2="val('CommonSets.InputB5.13.Mux', CommonSets.InputB5.13.Mux)"/>
+			<param text="Вход 5B-15" expr1="iif(Control.Optron5BX1_14,1,0)" expr2="val('CommonSets.InputB5.14.Mux', CommonSets.InputB5.14.Mux)"/>
+			<param text="Вход 5B-16" expr1="iif(Control.Optron5BX1_15,1,0)" expr2="val('CommonSets.InputB5.15.Mux', CommonSets.InputB5.15.Mux)"/>
+			<param text="Вход 5B-17" expr1="iif(Control.Optron5BX2_0,1,0)" expr2="val('CommonSets.InputB5.16.Mux', CommonSets.InputB5.16.Mux)"/>
+			<param text="Вход 5B-18" expr1="iif(Control.Optron5BX2_1,1,0)" expr2="val('CommonSets.InputB5.17.Mux', CommonSets.InputB5.17.Mux)"/>
+			<param text="Вход 5B-19" expr1="iif(Control.Optron5BX2_2,1,0)" expr2="val('CommonSets.InputB5.18.Mux', CommonSets.InputB5.18.Mux)"/>
+			<param text="Вход 5B-20" expr1="iif(Control.Optron5BX2_3,1,0)" expr2="val('CommonSets.InputB5.19.Mux', CommonSets.InputB5.19.Mux)"/>
+			<param text="Вход 5B-21" expr1="iif(Control.Optron5BX2_4,1,0)" expr2="val('CommonSets.InputB5.20.Mux', CommonSets.InputB5.20.Mux)"/>
+		</group>
+		<group name="Модуль 6B" visible="(Config() &amp; 0xFF00) == 0xb00">
+			<param text="Вход 6B-1" expr1="iif(Control.Optron6BX1_0,1,0)" expr2="val('CommonSets.InputB6.0.Mux', CommonSets.InputB6.0.Mux)"/>
+			<param text="Вход 6B-2" expr1="iif(Control.Optron6BX1_1,1,0)" expr2="val('CommonSets.InputB6.1.Mux', CommonSets.InputB6.1.Mux)"/>
+			<param text="Вход 6B-3" expr1="iif(Control.Optron6BX1_2,1,0)" expr2="val('CommonSets.InputB6.2.Mux', CommonSets.InputB6.2.Mux)"/>
+			<param text="Вход 6B-4" expr1="iif(Control.Optron6BX1_3,1,0)" expr2="val('CommonSets.InputB6.3.Mux', CommonSets.InputB6.3.Mux)"/>
+			<param text="Вход 6B-5" expr1="iif(Control.Optron6BX1_4,1,0)" expr2="val('CommonSets.InputB6.4.Mux', CommonSets.InputB6.4.Mux)"/>
+			<param text="Вход 6B-6" expr1="iif(Control.Optron6BX1_5,1,0)" expr2="val('CommonSets.InputB6.5.Mux', CommonSets.InputB6.5.Mux)"/>
+			<param text="Вход 6B-7" expr1="iif(Control.Optron6BX1_6,1,0)" expr2="val('CommonSets.InputB6.6.Mux', CommonSets.InputB6.6.Mux)"/>
+			<param text="Вход 6B-8" expr1="iif(Control.Optron6BX1_7,1,0)" expr2="val('CommonSets.InputB6.7.Mux', CommonSets.InputB6.7.Mux)"/>
+			<param text="Вход 6B-9" expr1="iif(Control.Optron6BX1_8,1,0)" expr2="val('CommonSets.InputB6.8.Mux', CommonSets.InputB6.8.Mux)"/>
+			<param text="Вход 6B-10" expr1="iif(Control.Optron6BX1_9,1,0)" expr2="val('CommonSets.InputB6.9.Mux', CommonSets.InputB6.9.Mux)" visible="false()"/>
+			<param text="Вход 6B-11" expr1="iif(Control.Optron6BX1_10,1,0)" expr2="val('CommonSets.InputB6.10.Mux', CommonSets.InputB6.10.Mux)" visible="false()"/>
+			<param text="Вход 6B-12" expr1="iif(Control.Optron6BX1_11,1,0)" expr2="val('CommonSets.InputB6.11.Mux', CommonSets.InputB6.11.Mux)" visible="false()"/>
+			<param text="Вход 6B-13" expr1="iif(Control.Optron6BX1_12,1,0)" expr2="val('CommonSets.InputB6.12.Mux', CommonSets.InputB6.12.Mux)" visible="false()"/>
+			<param text="Вход 6B-14" expr1="iif(Control.Optron6BX1_13,1,0)" expr2="val('CommonSets.InputB6.13.Mux', CommonSets.InputB6.13.Mux)" visible="false()"/>
+			<param text="Вход 6B-15" expr1="iif(Control.Optron6BX1_14,1,0)" expr2="val('CommonSets.InputB6.14.Mux', CommonSets.InputB6.14.Mux)" visible="false()"/>
+			<param text="Вход 6B-16" expr1="iif(Control.Optron6BX1_15,1,0)" expr2="val('CommonSets.InputB6.15.Mux', CommonSets.InputB6.15.Mux)" visible="false()"/>
+			<param text="Вход 6B-17" expr1="iif(Control.Optron6BX2_0,1,0)" expr2="val('CommonSets.InputB6.16.Mux', CommonSets.InputB6.16.Mux)" visible="false()"/>
+			<param text="Вход 6B-18" expr1="iif(Control.Optron6BX2_1,1,0)" expr2="val('CommonSets.InputB6.17.Mux', CommonSets.InputB6.17.Mux)" visible="false()"/>
+			<param text="Вход 6B-19" expr1="iif(Control.Optron6BX2_2,1,0)" expr2="val('CommonSets.InputB6.18.Mux', CommonSets.InputB6.18.Mux)" visible="false()"/>
+			<param text="Вход 6B-20" expr1="iif(Control.Optron6BX2_3,1,0)" expr2="val('CommonSets.InputB6.19.Mux', CommonSets.InputB6.19.Mux)" visible="false()"/>
+			<param text="Вход 6B-21" expr1="iif(Control.Optron6BX2_4,1,0)" expr2="val('CommonSets.InputB6.20.Mux', CommonSets.InputB6.20.Mux)" visible="false()"/>
+		</group>
+		<group name="Модуль 1D" visible="((Config() &amp; 0xFF00) != 0xc00)">
+			<param text="Вход 1D-1" expr1="iif(Control.Optron1DX1_0,1,0)" expr2="val('CommonSets.InputD1.0.Mux', CommonSets.InputD1.0.Mux)"/>
+			<param text="Вход 1D-2" expr1="iif(Control.Optron1DX1_1,1,0)" expr2="val('CommonSets.InputD1.1.Mux', CommonSets.InputD1.1.Mux)"/>
+			<param text="Вход 1D-3" expr1="iif(Control.Optron1DX1_2,1,0)" expr2="val('CommonSets.InputD1.2.Mux', CommonSets.InputD1.2.Mux)"/>
+			<param text="Вход 1D-4" expr1="iif(Control.Optron1DX1_3,1,0)" expr2="val('CommonSets.InputD1.3.Mux', CommonSets.InputD1.3.Mux)"/>
+			<param text="Вход 1D-5" expr1="iif(Control.Optron1DX1_4,1,0)" expr2="val('CommonSets.InputD1.4.Mux', CommonSets.InputD1.4.Mux)"/>
+			<param text="Вход 1D-6" expr1="iif(Control.Optron1DX1_5,1,0)" expr2="val('CommonSets.InputD1.5.Mux', CommonSets.InputD1.5.Mux)"/>
+			<param text="Вход 1D-7" expr1="iif(Control.Optron1DX1_6,1,0)" expr2="val('CommonSets.InputD1.6.Mux', CommonSets.InputD1.6.Mux)"/>
+			<param text="Вход 1D-8" expr1="iif(Control.Optron1DX1_7,1,0)" expr2="val('CommonSets.InputD1.7.Mux', CommonSets.InputD1.7.Mux)"/>
+			<param text="Вход 1D-9" expr1="iif(Control.Optron1DX1_8,1,0)" expr2="val('CommonSets.InputD1.8.Mux', CommonSets.InputD1.8.Mux)"/>
+			<param text="Вход 1D-10" expr1="iif(Control.Optron1DX1_9,1,0)" expr2="val('CommonSets.InputD1.9.Mux', CommonSets.InputD1.9.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0xb00 || (Config() &amp; 0xFF00) == 0xd00"/>
+			<param text="Вход 1D-11" expr1="iif(Control.Optron1DX1_10,1,0)" expr2="val('CommonSets.InputD1.10.Mux', CommonSets.InputD1.10.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0xb00 || (Config() &amp; 0xFF00) == 0xd00"/>
+			<param text="Вход 1D-12" expr1="iif(Control.Optron1DX1_11,1,0)" expr2="val('CommonSets.InputD1.11.Mux', CommonSets.InputD1.11.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0xb00 || (Config() &amp; 0xFF00) == 0xd00"/>
+			<param text="Вход 1D-13" expr1="iif(Control.Optron1DX1_12,1,0)" expr2="val('CommonSets.InputD1.12.Mux', CommonSets.InputD1.12.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xd00"/>
+			<param text="Вход 1D-14" expr1="iif(Control.Optron1DX1_13,1,0)" expr2="val('CommonSets.InputD1.13.Mux', CommonSets.InputD1.13.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xd00"/>
+			<param text="Вход 1D-15" expr1="iif(Control.Optron1DX1_14,1,0)" expr2="val('CommonSets.InputD1.14.Mux', CommonSets.InputD1.14.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1D-16" expr1="iif(Control.Optron1DX1_15,1,0)" expr2="val('CommonSets.InputD1.15.Mux', CommonSets.InputD1.15.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1D-17" expr1="iif(Control.Optron1DX2_0,1,0)" expr2="val('CommonSets.InputD1.16.Mux', CommonSets.InputD1.16.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1D-18" expr1="iif(Control.Optron1DX2_1,1,0)" expr2="val('CommonSets.InputD1.17.Mux', CommonSets.InputD1.17.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1D-19" expr1="iif(Control.Optron1DX2_2,1,0)" expr2="val('CommonSets.InputD1.18.Mux', CommonSets.InputD1.18.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1D-20" expr1="iif(Control.Optron1DX2_3,1,0)" expr2="val('CommonSets.InputD1.19.Mux', CommonSets.InputD1.19.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1D-21" expr1="iif(Control.Optron1DX2_4,1,0)" expr2="val('CommonSets.InputD1.20.Mux', CommonSets.InputD1.20.Mux)" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+		</group>
+		<group name="Модуль 1E">
+			<param text="Вход 1E-1" expr1="iif(Control.Optron1EX1_0,1,0)" expr2="val('CommonSets.InputE1.0.Mux', CommonSets.InputE1.0.Mux)"/>
+			<param text="Вход 1E-2" expr1="iif(Control.Optron1EX1_1,1,0)" expr2="val('CommonSets.InputE1.1.Mux', CommonSets.InputE1.1.Mux)"/>
+			<param text="Вход 1E-3" expr1="iif(Control.Optron1EX1_2,1,0)" expr2="val('CommonSets.InputE1.2.Mux', CommonSets.InputE1.2.Mux)"/>
+			<param text="Вход 1E-4" expr1="iif(Control.Optron1EX1_3,1,0)" expr2="val('CommonSets.InputE1.3.Mux', CommonSets.InputE1.3.Mux)"/>
+			<param text="Вход 1E-5" expr1="iif(Control.Optron1EX1_4,1,0)" expr2="val('CommonSets.InputE1.4.Mux', CommonSets.InputE1.4.Mux)"/>
+			<param text="Вход 1E-6" expr1="iif(Control.Optron1EX1_5,1,0)" expr2="val('CommonSets.InputE1.5.Mux', CommonSets.InputE1.5.Mux)"/>
+			<param text="Вход 1E-7" expr1="iif(Control.Optron1EX1_6,1,0)" expr2="val('CommonSets.InputE1.6.Mux', CommonSets.InputE1.6.Mux)"/>
+			<param text="Вход 1E-8" expr1="iif(Control.Optron1EX1_7,1,0)" expr2="val('CommonSets.InputE1.7.Mux', CommonSets.InputE1.7.Mux)"/>
+			<param text="Вход 1E-9" expr1="iif(Control.Optron1EX1_8,1,0)" expr2="val('CommonSets.InputE1.8.Mux', CommonSets.InputE1.8.Mux)"/>
+			<param text="Вход 1E-10" expr1="iif(Control.Optron1EX1_9,1,0)" expr2="val('CommonSets.InputE1.9.Mux', CommonSets.InputE1.9.Mux)"/>
+			<param text="Вход 1E-11" expr1="iif(Control.Optron1EX1_10,1,0)" expr2="val('CommonSets.InputE1.10.Mux', CommonSets.InputE1.10.Mux)"/>
+			<param text="Вход 1E-12" expr1="iif(Control.Optron1EX1_11,1,0)" expr2="val('CommonSets.InputE1.11.Mux', CommonSets.InputE1.11.Mux)"/>
+			<param text="Вход 1E-13" expr1="iif(Control.Optron1EX1_12,1,0)" expr2="val('CommonSets.InputE1.12.Mux', CommonSets.InputE1.12.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-14" expr1="iif(Control.Optron1EX1_13,1,0)" expr2="val('CommonSets.InputE1.13.Mux', CommonSets.InputE1.13.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-15" expr1="iif(Control.Optron1EX1_14,1,0)" expr2="val('CommonSets.InputE1.14.Mux', CommonSets.InputE1.14.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-16" expr1="iif(Control.Optron1EX1_15,1,0)" expr2="val('CommonSets.InputE1.15.Mux', CommonSets.InputE1.15.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-17" expr1="iif(Control.Optron1EX2_0,1,0)" expr2="val('CommonSets.InputE1.16.Mux', CommonSets.InputE1.16.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-18" expr1="iif(Control.Optron1EX2_1,1,0)" expr2="val('CommonSets.InputE1.17.Mux', CommonSets.InputE1.17.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-19" expr1="iif(Control.Optron1EX2_2,1,0)" expr2="val('CommonSets.InputE1.18.Mux', CommonSets.InputE1.18.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-20" expr1="iif(Control.Optron1EX2_3,1,0)" expr2="val('CommonSets.InputE1.19.Mux', CommonSets.InputE1.19.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-21" expr1="iif(Control.Optron1EX2_4,1,0)" expr2="val('CommonSets.InputE1.20.Mux', CommonSets.InputE1.20.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-22" expr1="iif(Control.Optron1EX2_5,1,0)" expr2="val('CommonSets.InputE1.21.Mux', CommonSets.InputE1.21.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-23" expr1="iif(Control.Optron1EX2_6,1,0)" expr2="val('CommonSets.InputE1.22.Mux', CommonSets.InputE1.22.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+			<param text="Вход 1E-24" expr1="iif(Control.Optron1EX2_7,1,0)" expr2="val('CommonSets.InputE1.23.Mux', CommonSets.InputE1.23.Mux)" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800"/>
+		</group>
+	</group>
+	<group name="Реле" visible="((Config() &amp; 0xFF00) != 0x100) &amp;&amp; ((Config() &amp; 0xFF00) != 0x400) &amp;&amp; ((Config() &amp; 0xFF00) != 0x800)">
+		<group name="Модуль 1B" visible="((Config() &amp; 0xFF00) == 0x500) || ((Config() &amp; 0xFF00) == 0xc00)">
+			<param text="Реле 1B-1" expr1="iif(Control.Relay1B_0,1,0)" expr2="val('CommonSets.ReleB1.0.Mux', CommonSets.ReleB1.0.Mux)"/>
+			<param text="Реле 1B-2" expr1="iif(Control.Relay1B_1,1,0)" expr2="val('CommonSets.ReleB1.1.Mux', CommonSets.ReleB1.1.Mux)"/>
+			<param text="Реле 1B-3" expr1="iif(Control.Relay1B_2,1,0)" expr2="val('CommonSets.ReleB1.2.Mux', CommonSets.ReleB1.2.Mux)"/>
+			<param text="Реле 1B-4" expr1="iif(Control.Relay1B_3,1,0)" expr2="val('CommonSets.ReleB1.3.Mux', CommonSets.ReleB1.3.Mux)"/>
+		</group>
+		<group name="Модуль 2B" visible="((Config() &amp; 0xFF00) == 0x600) || ((Config() &amp; 0xFF00) == 0x700) || ((Config() &amp; 0xFF00) == 0x900) || ((Config() &amp; 0xFF00) == 0xc00)">
+			<param text="Реле 2B-1" expr1="iif(Control.Relay2B_0,1,0)" expr2="val('CommonSets.ReleB2.0.Mux', CommonSets.ReleB2.0.Mux)" visible="(Config() &amp; 0xFF00) != 0x900"/>
+			<param text="Реле 2B-2" expr1="iif(Control.Relay2B_1,1,0)" expr2="val('CommonSets.ReleB2.1.Mux', CommonSets.ReleB2.1.Mux)" visible="(Config() &amp; 0xFF00) != 0x900"/>
+			<param text="Реле 2B-3" expr1="iif(Control.Relay2B_2,1,0)" expr2="val('CommonSets.ReleB2.2.Mux', CommonSets.ReleB2.2.Mux)" visible="(Config() &amp; 0xFF00) != 0x900"/>
+			<param text="Реле 2B-4" expr1="iif(Control.Relay2B_3,1,0)" expr2="val('CommonSets.ReleB2.3.Mux', CommonSets.ReleB2.3.Mux)"/>
+			<param text="Реле 2B-5" expr1="iif(Control.Relay2B_4,1,0)" expr2="val('CommonSets.ReleB2.4.Mux', CommonSets.ReleB2.4.Mux)"/>
+			<param text="Реле 2B-6" expr1="iif(Control.Relay2B_5,1,0)" expr2="val('CommonSets.ReleB2.5.Mux', CommonSets.ReleB2.5.Mux)"/>
+			<param text="Реле 2B-7" expr1="iif(Control.Relay2B_6,1,0)" expr2="val('CommonSets.ReleB2.6.Mux', CommonSets.ReleB2.6.Mux)" visible="(Config() &amp; 0xFF00) != 0x900"/>
+			<param text="Реле 2B-8" expr1="iif(Control.Relay2B_7,1,0)" expr2="val('CommonSets.ReleB2.7.Mux', CommonSets.ReleB2.7.Mux)" visible="(Config() &amp; 0xFF00) != 0x900"/>
+			<param text="Реле 2B-9" expr1="iif(Control.Relay2B_8,1,0)" expr2="val('CommonSets.ReleB2.8.Mux', CommonSets.ReleB2.8.Mux)" visible="(Config() &amp; 0xFF00) != 0x900"/>
+		</group>
+		<group name="Модуль 3B" visible="(Config() &amp; 0xFF00) == 0x900 || (Config() &amp; 0xFF00) == 0xa00">
+			<param text="Реле 3B-1" expr1="iif(Control.Relay3B_0,1,0)" expr2="val('CommonSets.ReleB3.0.Mux', CommonSets.ReleB3.0.Mux)"/>
+			<param text="Реле 3B-2" expr1="iif(Control.Relay3B_1,1,0)" expr2="val('CommonSets.ReleB3.1.Mux', CommonSets.ReleB3.1.Mux)"/>
+			<param text="Реле 3B-3" expr1="iif(Control.Relay3B_6,1,0)" expr2="val('CommonSets.ReleB3.2.Mux', CommonSets.ReleB3.2.Mux)"/>
+			<param text="Реле 3B-4" expr1="iif(Control.Relay3B_7,1,0)" expr2="val('CommonSets.ReleB3.3.Mux', CommonSets.ReleB3.3.Mux)"/>
+			<param text="Реле 3B-5" expr1="iif(Control.Relay3B_8,1,0)" expr2="val('CommonSets.ReleB3.4.Mux', CommonSets.ReleB3.4.Mux)"/>
+			<param text="Реле 3B-6" expr1="iif(Control.Relay3B_9,1,0)" expr2="val('CommonSets.ReleB3.5.Mux', CommonSets.ReleB3.5.Mux)"/>
+		</group>
+		<group name="Модуль 4B" visible="(Config() &amp; 0xFF00) == 0xa00">
+			<param text="Реле 4B-1" expr1="iif(Control.Relay4B_0,1,0)" expr2="val('CommonSets.ReleB4.0.Mux', CommonSets.ReleB4.0.Mux)"/>
+			<param text="Реле 4B-2" expr1="iif(Control.Relay4B_1,1,0)" expr2="val('CommonSets.ReleB4.1.Mux', CommonSets.ReleB4.1.Mux)"/>
+			<param text="Реле 4B-3" expr1="iif(Control.Relay4B_2,1,0)" expr2="val('CommonSets.ReleB4.2.Mux', CommonSets.ReleB4.2.Mux)"/>
+			<param text="Реле 4B-4" expr1="iif(Control.Relay4B_3,1,0)" expr2="val('CommonSets.ReleB4.3.Mux', CommonSets.ReleB4.3.Mux)"/>
+			<param text="Реле 4B-5" expr1="iif(Control.Relay4B_4,1,0)" expr2="val('CommonSets.ReleB4.4.Mux', CommonSets.ReleB4.4.Mux)"/>
+			<param text="Реле 4B-6" expr1="iif(Control.Relay4B_5,1,0)" expr2="val('CommonSets.ReleB4.5.Mux', CommonSets.ReleB4.5.Mux)"/>
+		</group>
+		<group name="Модуль 6B" visible="(Config() &amp; 0xFF00) == 0xb00">
+			<param text="Реле 6B-1" expr1="iif(Control.Relay6B_0,1,0)" expr2="val('CommonSets.ReleB6.0.Mux', CommonSets.ReleB6.0.Mux)"/>
+			<param text="Реле 6B-2" expr1="iif(Control.Relay6B_1,1,0)" expr2="val('CommonSets.ReleB6.1.Mux', CommonSets.ReleB6.1.Mux)"/>
+			<param text="Реле 6B-3" expr1="iif(Control.Relay6B_2,1,0)" expr2="val('CommonSets.ReleB6.2.Mux', CommonSets.ReleB6.2.Mux)"/>
+			<param text="Реле 6B-4" expr1="iif(Control.Relay6B_3,1,0)" expr2="val('CommonSets.ReleB6.3.Mux', CommonSets.ReleB6.3.Mux)"/>
+			<param text="Реле 6B-5" expr1="iif(Control.Relay6B_4,1,0)" expr2="val('CommonSets.ReleB6.4.Mux', CommonSets.ReleB6.4.Mux)"/>
+			<param text="Реле 6B-6" expr1="iif(Control.Relay6B_5,1,0)" expr2="val('CommonSets.ReleB6.5.Mux', CommonSets.ReleB6.5.Mux)"/>
+			<param text="Реле 6B-7" expr1="iif(Control.Relay6B_6,1,0)" expr2="val('CommonSets.ReleB6.6.Mux', CommonSets.ReleB6.6.Mux)"/>
+			<param text="Реле 6B-8" expr1="iif(Control.Relay6B_7,1,0)" expr2="val('CommonSets.ReleB6.7.Mux', CommonSets.ReleB6.7.Mux)"/>
+			<param text="Реле 6B-9" expr1="iif(Control.Relay6B_8,1,0)" expr2="val('CommonSets.ReleB6.8.Mux', CommonSets.ReleB6.8.Mux)"/>
+			<param text="Реле 6B-10" expr1="iif(Control.Relay6B_9,1,0)" expr2="val('CommonSets.ReleB6.9.Mux', CommonSets.ReleB6.9.Mux)"/>
+			<param text="Реле 6B-11" expr1="iif(Control.Relay6B_10,1,0)" expr2="val('CommonSets.ReleB6.10.Mux', CommonSets.ReleB6.10.Mux)"/>
+			<param text="Реле 6B-12" expr1="iif(Control.Relay6B_11,1,0)" expr2="val('CommonSets.ReleB6.11.Mux', CommonSets.ReleB6.11.Mux)"/>
+		</group>
+		<group name="Модуль 1D" visible="((Config() &amp; 0xFF00) != 0x500) &amp;&amp; ((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x000)">
+			<param text="Реле 1D-1" expr1="iif(Control.Relay1D_0,1,0)" expr2="val('CommonSets.ReleD1.0.Mux', CommonSets.ReleD1.0.Mux)" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00 || (Config() &amp; 0xFF00) == 0xd00"/>
+			<param text="Реле 1D-2" expr1="iif(Control.Relay1D_1,1,0)" expr2="val('CommonSets.ReleD1.1.Mux', CommonSets.ReleD1.1.Mux)" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00 || (Config() &amp; 0xFF00) == 0xd00"/>
+			<param text="Реле 1D-3" expr1="iif(Control.Relay1D_2,1,0)" expr2="val('CommonSets.ReleD1.2.Mux', CommonSets.ReleD1.2.Mux)" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00 || (Config() &amp; 0xFF00) == 0xd00"/>
+			<param text="Реле 1D-4" expr1="iif(Control.Relay1D_3,1,0)" expr2="val('CommonSets.ReleD1.3.Mux', CommonSets.ReleD1.3.Mux)"/>
+			<param text="Реле 1D-5" expr1="iif(Control.Relay1D_4,1,0)" expr2="val('CommonSets.ReleD1.4.Mux', CommonSets.ReleD1.4.Mux)" visible="(Config() &amp; 0xFF00) != 0xd00"/>
+			<param text="Реле 1D-6" expr1="iif(Control.Relay1D_5,1,0)" expr2="val('CommonSets.ReleD1.5.Mux', CommonSets.ReleD1.5.Mux)" visible="(Config() &amp; 0xFF00) != 0xd00"/>
+			<param text="Реле 1D-7" expr1="iif(Control.Relay1D_6,1,0)" expr2="val('CommonSets.ReleD1.6.Mux', CommonSets.ReleD1.6.Mux)" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Реле 1D-8" expr1="iif(Control.Relay1D_7,1,0)" expr2="val('CommonSets.ReleD1.7.Mux', CommonSets.ReleD1.7.Mux)" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Реле 1D-9" expr1="iif(Control.Relay1D_8,1,0)" expr2="val('CommonSets.ReleD1.8.Mux', CommonSets.ReleD1.8.Mux)" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Реле 1D-10" expr1="iif(Control.Relay1D_9,1,0)" expr2="val('CommonSets.ReleD1.9.Mux', CommonSets.ReleD1.9.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Реле 1D-11" expr1="iif(Control.Relay1D_10,1,0)" expr2="val('CommonSets.ReleD1.10.Mux', CommonSets.ReleD1.10.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+			<param text="Реле 1D-12" expr1="iif(Control.Relay1D_11,1,0)" expr2="val('CommonSets.ReleD1.11.Mux', CommonSets.ReleD1.11.Mux)" visible="(Config() &amp; 0xFF00) == 0xb00"/>
+		</group>
+		<group name="Модуль 1E" visible="((Config() &amp; 0xFF00) != 0x500)">
+			<param text="Реле 1E-1" expr1="iif(Control.Relay1E_0,1,0)" expr2="val('CommonSets.ReleE1.0.Mux',CommonSets.ReleE1.0.Mux)"/>
+			<param text="Реле 1E-2" expr1="iif(Control.Relay1E_1,1,0)" expr2="val('CommonSets.ReleE1.1.Mux',CommonSets.ReleE1.1.Mux)"/>
+			<param text="Реле 1E-3" expr1="iif(Control.Relay1E_2,1,0)" expr2="val('CommonSets.ReleE1.2.Mux',CommonSets.ReleE1.2.Mux)"/>
+			<param text="Реле 1E-4" expr1="iif(Control.Relay1E_3,1,0)" expr2="val('CommonSets.ReleE1.3.Mux',CommonSets.ReleE1.3.Mux)"/>
+			<param text="Реле 1E-5" expr1="iif(Control.Relay1E_4,1,0)" expr2="val('CommonSets.ReleE1.4.Mux',CommonSets.ReleE1.4.Mux)"/>
+			<param text="Реле 1E-6" expr1="iif(Control.Relay1E_5,1,0)" expr2="val('CommonSets.ReleE1.5.Mux',CommonSets.ReleE1.5.Mux)"/>
+			<param text="Реле 1E-7" expr1="iif(Control.Relay1E_6,1,0)" expr2="val('CommonSets.ReleE1.6.Mux',CommonSets.ReleE1.6.Mux)"/>
+			<param text="Реле 1E-8" expr1="iif(Control.Relay1E_7,1,0)" expr2="val('CommonSets.ReleE1.7.Mux',CommonSets.ReleE1.7.Mux)"/>
+			<param text="Реле 1E-9" expr1="iif(Control.Relay1E_8,1,0)" expr2="val('CommonSets.ReleE1.8.Mux',CommonSets.ReleE1.8.Mux)"/>
+			<param text="Реле 1E-10" expr1="iif(Control.Relay1E_9,1,0)" expr2="val('CommonSets.ReleE1.9.Mux',CommonSets.ReleE1.9.Mux)"/>
+		</group>
+	</group>
+	<group name="Коммутационные аппараты">
+		<param text="КА1" expr1="iif(Control.KA1_state == 0, format('{0}','Переключается'),iif(Control.KA1_state == 1, format('{0}','Отключен'),iif(Control.KA1_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА2" expr1="iif(Control.KA2_state == 0, format('{0}','Переключается'),iif(Control.KA2_state == 1, format('{0}','Отключен'),iif(Control.KA2_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА3" expr1="iif(Control.KA3_state == 0, format('{0}','Переключается'),iif(Control.KA3_state == 1, format('{0}','Отключен'),iif(Control.KA3_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА4" expr1="iif(Control.KA4_state == 0, format('{0}','Переключается'),iif(Control.KA4_state == 1, format('{0}','Отключен'),iif(Control.KA4_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА5" expr1="iif(Control.KA5_state == 0, format('{0}','Переключается'),iif(Control.KA5_state == 1, format('{0}','Отключен'),iif(Control.KA5_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА6" expr1="iif(Control.KA6_state == 0, format('{0}','Переключается'),iif(Control.KA6_state == 1, format('{0}','Отключен'),iif(Control.KA6_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА7" expr1="iif(Control.KA7_state == 0, format('{0}','Переключается'),iif(Control.KA7_state == 1, format('{0}','Отключен'),iif(Control.KA7_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА8" expr1="iif(Control.KA8_state == 0, format('{0}','Переключается'),iif(Control.KA8_state == 1, format('{0}','Отключен'),iif(Control.KA8_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА9" expr1="iif(Control.KA9_state == 0, format('{0}','Переключается'),iif(Control.KA9_state == 1, format('{0}','Отключен'),iif(Control.KA9_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА10" expr1="iif(Control.KA10_state == 0, format('{0}','Переключается'),iif(Control.KA10_state == 1, format('{0}','Отключен'),iif(Control.KA10_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА11" expr1="iif(Control.KA11_state == 0, format('{0}','Переключается'),iif(Control.KA11_state == 1, format('{0}','Отключен'),iif(Control.KA11_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА12" expr1="iif(Control.KA12_state == 0, format('{0}','Переключается'),iif(Control.KA12_state == 1, format('{0}','Отключен'),iif(Control.KA12_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА13" expr1="iif(Control.KA13_state == 0, format('{0}','Переключается'),iif(Control.KA13_state == 1, format('{0}','Отключен'),iif(Control.KA13_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+		<param text="КА14" expr1="iif(Control.KA14_state == 0, format('{0}','Переключается'),iif(Control.KA14_state == 1, format('{0}','Отключен'),iif(Control.KA14_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))"/>
+	</group>
+	<group name="Выключатели" visible="(Config() &amp; 0xFF00) == 0x200 || (Config() &amp; 0xFF00) == 0x600 || (Config() &amp; 0xFF00) == 0x900 || (Config() &amp; 0xFF00) == 0xa00">
+		<param text="Выключатель 2B" expr1="iif(Control.CB_2B_state == 0, format('{0}','Переключается'),iif(Control.CB_2B_state == 1, format('{0}','Отключен'),iif(Control.CB_2B_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))" visible="(Config() &amp; 0xFF00) == 0x900"/>
+		<param text="Выключатель 3B" expr1="iif(Control.CB_3B_state == 0, format('{0}','Переключается'),iif(Control.CB_3B_state == 1, format('{0}','Отключен'),iif(Control.CB_3B_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))" visible="(Config() &amp; 0xFF00) == 0x900 || (Config() &amp; 0xFF00) == 0xa00"/>
+		<param text="Выключатель 4B" expr1="iif(Control.CB_4B_state == 0, format('{0}','Переключается'),iif(Control.CB_4B_state == 1, format('{0}','Отключен'),iif(Control.CB_4B_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))" visible="(Config() &amp; 0xFF00) == 0xa00"/>
+		<param text="Выключатель 1D" expr1="iif(Control.CB_1D_state == 0, format('{0}','Переключается'),iif(Control.CB_1D_state == 1, format('{0}','Отключен'),iif(Control.CB_1D_state == 2, format('{0}','Включен'),format('{0}','Неисправен'))))" visible="(Config() &amp; 0xFF00) == 0x200 || (Config() &amp; 0xFF00) == 0x600 || (Config() &amp; 0xFF00) == 0x900 || (Config() &amp; 0xFF00) == 0xa00"/>
+	</group>
+	<group name="Состояние GOOSE">
+		<param text="GOOSE 001: GOOSE 1" expr1="iif(Control.GOOSE_0_0,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_0'),iif(Control.GOOSET_.0.0,'     T',' '))" visible="Control.GOOSEQ_0_0 != 2"/>
+		<param text="GOOSE 002: GOOSE 2" expr1="iif(Control.GOOSE_0_1,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_1'),iif(Control.GOOSET_.0.1,'     T',' '))" visible="Control.GOOSEQ_0_1 != 2"/>
+		<param text="GOOSE 003: GOOSE 3" expr1="iif(Control.GOOSE_0_2,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_2'),iif(Control.GOOSET_.0.2,'     T',' '))" visible="Control.GOOSEQ_0_2 != 2"/>
+		<param text="GOOSE 004: GOOSE 4" expr1="iif(Control.GOOSE_0_3,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_3'),iif(Control.GOOSET_.0.3,'     T',' '))" visible="Control.GOOSEQ_0_3 != 2"/>
+		<param text="GOOSE 005: GOOSE 5" expr1="iif(Control.GOOSE_0_4,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_4'),iif(Control.GOOSET_.0.4,'     T',' '))" visible="Control.GOOSEQ_0_4 != 2"/>
+		<param text="GOOSE 006: GOOSE 6" expr1="iif(Control.GOOSE_0_5,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_5'),iif(Control.GOOSET_.0.5,'     T',' '))" visible="Control.GOOSEQ_0_5 != 2"/>
+		<param text="GOOSE 007: GOOSE 7" expr1="iif(Control.GOOSE_0_6,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_6'),iif(Control.GOOSET_.0.6,'     T',' '))" visible="Control.GOOSEQ_0_6 != 2"/>
+		<param text="GOOSE 008: GOOSE 8" expr1="iif(Control.GOOSE_0_7,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_7'),iif(Control.GOOSET_.0.7,'     T',' '))" visible="Control.GOOSEQ_0_7 != 2"/>
+		<param text="GOOSE 009: GOOSE 9" expr1="iif(Control.GOOSE_0_8,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_8'),iif(Control.GOOSET_.0.8,'     T',' '))" visible="Control.GOOSEQ_0_8 != 2"/>
+		<param text="GOOSE 010: GOOSE 10" expr1="iif(Control.GOOSE_0_9,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_9'),iif(Control.GOOSET_.0.9,'     T',' '))" visible="Control.GOOSEQ_0_9 != 2"/>
+		<param text="GOOSE 011: GOOSE 11" expr1="iif(Control.GOOSE_0_10,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_10'),iif(Control.GOOSET_.0.10,'     T',' '))" visible="Control.GOOSEQ_0_10 != 2"/>
+		<param text="GOOSE 012: GOOSE 12" expr1="iif(Control.GOOSE_0_11,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_11'),iif(Control.GOOSET_.0.11,'     T',' '))" visible="Control.GOOSEQ_0_11 != 2"/>
+		<param text="GOOSE 013: GOOSE 13" expr1="iif(Control.GOOSE_0_12,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_12'),iif(Control.GOOSET_.0.12,'     T',' '))" visible="Control.GOOSEQ_0_12 != 2"/>
+		<param text="GOOSE 014: GOOSE 14" expr1="iif(Control.GOOSE_0_13,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_13'),iif(Control.GOOSET_.0.13,'     T',' '))" visible="Control.GOOSEQ_0_13 != 2"/>
+		<param text="GOOSE 015: GOOSE 15" expr1="iif(Control.GOOSE_0_14,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_14'),iif(Control.GOOSET_.0.14,'     T',' '))" visible="Control.GOOSEQ_0_14 != 2"/>
+		<param text="GOOSE 016: GOOSE 16" expr1="iif(Control.GOOSE_0_15,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_0_15'),iif(Control.GOOSET_.0.15,'     T',' '))" visible="Control.GOOSEQ_0_15 != 2"/>
+		<param text="GOOSE 017: GOOSE 17" expr1="iif(Control.GOOSE_1_0,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_0'),iif(Control.GOOSET_.1.0,'     T',' '))" visible="Control.GOOSEQ_1_0 != 2"/>
+		<param text="GOOSE 018: GOOSE 18" expr1="iif(Control.GOOSE_1_1,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_1'),iif(Control.GOOSET_.1.1,'     T',' '))" visible="Control.GOOSEQ_1_1 != 2"/>
+		<param text="GOOSE 019: GOOSE 19" expr1="iif(Control.GOOSE_1_2,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_2'),iif(Control.GOOSET_.1.2,'     T',' '))" visible="Control.GOOSEQ_1_2 != 2"/>
+		<param text="GOOSE 020: GOOSE 20" expr1="iif(Control.GOOSE_1_3,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_3'),iif(Control.GOOSET_.1.3,'     T',' '))" visible="Control.GOOSEQ_1_3 != 2"/>
+		<param text="GOOSE 021: GOOSE 21" expr1="iif(Control.GOOSE_1_4,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_4'),iif(Control.GOOSET_.1.4,'     T',' '))" visible="Control.GOOSEQ_1_4 != 2"/>
+		<param text="GOOSE 022: GOOSE 22" expr1="iif(Control.GOOSE_1_5,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_5'),iif(Control.GOOSET_.1.5,'     T',' '))" visible="Control.GOOSEQ_1_5 != 2"/>
+		<param text="GOOSE 023: GOOSE 23" expr1="iif(Control.GOOSE_1_6,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_6'),iif(Control.GOOSET_.1.6,'     T',' '))" visible="Control.GOOSEQ_1_6 != 2"/>
+		<param text="GOOSE 024: GOOSE 24" expr1="iif(Control.GOOSE_1_7,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_7'),iif(Control.GOOSET_.1.7,'     T',' '))" visible="Control.GOOSEQ_1_7 != 2"/>
+		<param text="GOOSE 025: GOOSE 25" expr1="iif(Control.GOOSE_1_8,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_8'),iif(Control.GOOSET_.1.8,'     T',' '))" visible="Control.GOOSEQ_1_8 != 2"/>
+		<param text="GOOSE 026: GOOSE 26" expr1="iif(Control.GOOSE_1_9,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_9'),iif(Control.GOOSET_.1.9,'     T',' '))" visible="Control.GOOSEQ_1_9 != 2"/>
+		<param text="GOOSE 027: GOOSE 27" expr1="iif(Control.GOOSE_1_10,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_10'),iif(Control.GOOSET_.1.10,'     T',' '))" visible="Control.GOOSEQ_1_10 != 2"/>
+		<param text="GOOSE 028: GOOSE 28" expr1="iif(Control.GOOSE_1_11,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_11'),iif(Control.GOOSET_.1.11,'     T',' '))" visible="Control.GOOSEQ_1_11 != 2"/>
+		<param text="GOOSE 029: GOOSE 29" expr1="iif(Control.GOOSE_1_12,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_12'),iif(Control.GOOSET_.1.12,'     T',' '))" visible="Control.GOOSEQ_1_12 != 2"/>
+		<param text="GOOSE 030: GOOSE 30" expr1="iif(Control.GOOSE_1_13,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_13'),iif(Control.GOOSET_.1.13,'     T',' '))" visible="Control.GOOSEQ_1_13 != 2"/>
+		<param text="GOOSE 031: GOOSE 31" expr1="iif(Control.GOOSE_1_14,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_14'),iif(Control.GOOSET_.1.14,'     T',' '))" visible="Control.GOOSEQ_1_14 != 2"/>
+		<param text="GOOSE 032: GOOSE 32" expr1="iif(Control.GOOSE_1_15,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_1_15'),iif(Control.GOOSET_.1.15,'     T',' '))" visible="Control.GOOSEQ_1_15 != 2"/>
+		<param text="GOOSE 033: GOOSE 33" expr1="iif(Control.GOOSE_2_0,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_0'),iif(Control.GOOSET_.2.0,'     T',' '))" visible="Control.GOOSEQ_2_0 != 2"/>
+		<param text="GOOSE 034: GOOSE 34" expr1="iif(Control.GOOSE_2_1,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_1'),iif(Control.GOOSET_.2.1,'     T',' '))" visible="Control.GOOSEQ_2_1 != 2"/>
+		<param text="GOOSE 035: GOOSE 35" expr1="iif(Control.GOOSE_2_2,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_2'),iif(Control.GOOSET_.2.2,'     T',' '))" visible="Control.GOOSEQ_2_2 != 2"/>
+		<param text="GOOSE 036: GOOSE 36" expr1="iif(Control.GOOSE_2_3,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_3'),iif(Control.GOOSET_.2.3,'     T',' '))" visible="Control.GOOSEQ_2_3 != 2"/>
+		<param text="GOOSE 037: GOOSE 37" expr1="iif(Control.GOOSE_2_4,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_4'),iif(Control.GOOSET_.2.4,'     T',' '))" visible="Control.GOOSEQ_2_4 != 2"/>
+		<param text="GOOSE 038: GOOSE 38" expr1="iif(Control.GOOSE_2_5,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_5'),iif(Control.GOOSET_.2.5,'     T',' '))" visible="Control.GOOSEQ_2_5 != 2"/>
+		<param text="GOOSE 039: GOOSE 39" expr1="iif(Control.GOOSE_2_6,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_6'),iif(Control.GOOSET_.2.6,'     T',' '))" visible="Control.GOOSEQ_2_6 != 2"/>
+		<param text="GOOSE 040: GOOSE 40" expr1="iif(Control.GOOSE_2_7,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_7'),iif(Control.GOOSET_.2.7,'     T',' '))" visible="Control.GOOSEQ_2_7 != 2"/>
+		<param text="GOOSE 041: GOOSE 41" expr1="iif(Control.GOOSE_2_8,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_8'),iif(Control.GOOSET_.2.8,'     T',' '))" visible="Control.GOOSEQ_2_8 != 2"/>
+		<param text="GOOSE 042: GOOSE 42" expr1="iif(Control.GOOSE_2_9,1,0)" expr2="format('{0}{1}',val('Control.GOOSEQ_2_9'),iif(Control.GOOSET_.2.9,'     T',' '))" visible="Control.GOOSEQ_2_9 != 2"/>
+	</group>
+	<group name="Логометр" visible="((Config() &amp; 0xff00) == 0xd00)||((Config() &amp; 0xff00) == 0xc00)||((Config() &amp; 0xff00) == 0x500)">
+		<param text="Текущая ступень" expr1="iif(Control.cnt_stup != 0, Control.cnt_stup, format('--',))"/>
+		<param text="R полное" expr1=  "iif(Sets.0.Logometer != 1, '-----', format('{0:F1} Ом', Control.Rupper))" />
+		<param text="R среднее" expr1="iif(Sets.0.Logometer != 1, '-----', format('{0:F1} Ом', Control.Rmiddle))" />
+		<param text="R замера" expr1="iif(Sets.0.Logometer != 1, '-----', format('{0:F1} Ом', Control.dR))" />
+		<param text="Iток.петли" expr1="iif(Sets.0.Logometer != 2, '-----', format('{0:F2} мА', Control.Iinp))" />
+		<param text="BCD" expr1="format('{0} {1} {2} {3} {4} {5} {6}', iif(Control.InputBCD.0,1,0), iif(Control.InputBCD.1,1,0), iif(Control.InputBCD.2,1,0), iif(Control.InputBCD.3,1,0), iif(Control.InputBCD.4,1,0), iif(Control.InputBCD.5,1,0), iif(Control.InputBCD.6,1,0))"
+			expr2= "iif(Sets.0.Logometer != 3, '-----', iif(Sets.0.Logometer == 3 &amp;&amp; Control.cnt_stup == 0,'Ош.код!', format('{0}',Control.cnt_stup)))" />
+	</group>
+</section>
+<section name="Уставки">
+	<group name="Конфигурирование">
+		<group name="Входы">
+			<group name="Модуль 1B" visible="((Config() &amp; 0xFF00) &gt; 0x100) &amp;&amp; ((Config() &amp; 0xFF00) &lt; 0xd00)">
+				<group name="Вход 1B-1">
+					<param name="Функция" path="CommonSets.InputB1.0.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.0.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.0.Tvr"/>
+				</group>
+				<group name="Вход 1B-2">
+					<param name="Функция" path="CommonSets.InputB1.1.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.1.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.1.Tvr"/>
+				</group>
+				<group name="Вход 1B-3">
+					<param name="Функция" path="CommonSets.InputB1.2.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.2.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.2.Tvr"/>
+				</group>
+				<group name="Вход 1B-4">
+					<param name="Функция" path="CommonSets.InputB1.3.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.3.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.3.Tvr"/>
+				</group>
+				<group name="Вход 1B-5">
+					<param name="Функция" path="CommonSets.InputB1.4.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.4.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.4.Tvr"/>
+				</group>
+				<group name="Вход 1B-6">
+					<param name="Функция" path="CommonSets.InputB1.5.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.5.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.5.Tvr"/>
+				</group>
+				<group name="Вход 1B-7">
+					<param name="Функция" path="CommonSets.InputB1.6.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.6.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.6.Tvr"/>
+				</group>
+				<group name="Вход 1B-8">
+					<param name="Функция" path="CommonSets.InputB1.7.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.7.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.7.Tvr"/>
+				</group>
+				<group name="Вход 1B-9">
+					<param name="Функция" path="CommonSets.InputB1.8.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.8.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.8.Tvr"/>
+				</group>
+				<group name="Вход 1B-10">
+					<param name="Функция" path="CommonSets.InputB1.9.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.9.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.9.Tvr"/>
+				</group>
+				<group name="Вход 1B-11">
+					<param name="Функция" path="CommonSets.InputB1.10.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.10.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.10.Tvr"/>
+				</group>
+				<group name="Вход 1B-12">
+					<param name="Функция" path="CommonSets.InputB1.11.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.11.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.11.Tvr"/>
+				</group>
+				<group name="Вход 1B-13">
+					<param name="Функция" path="CommonSets.InputB1.12.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.12.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.12.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.12.Tvr"/>
+				</group>
+				<group name="Вход 1B-14">
+					<param name="Функция" path="CommonSets.InputB1.13.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.13.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.13.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.13.Tvr"/>
+				</group>
+				<group name="Вход 1B-15" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)">
+					<param name="Функция" path="CommonSets.InputB1.14.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.14.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.14.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.14.Tvr"/>
+				</group>
+				<group name="Вход 1B-16" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)">
+					<param name="Функция" path="CommonSets.InputB1.15.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.15.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.15.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.15.Tvr"/>
+				</group>
+				<group name="Вход 1B-17" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)">
+					<param name="Функция" path="CommonSets.InputB1.16.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.16.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.16.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.16.Tvr"/>
+				</group>
+				<group name="Вход 1B-18" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)">
+					<param name="Функция" path="CommonSets.InputB1.17.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.17.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.17.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.17.Tvr"/>
+				</group>
+				<group name="Вход 1B-19" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)">
+					<param name="Функция" path="CommonSets.InputB1.18.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.18.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.18.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.18.Tvr"/>
+				</group>
+				<group name="Вход 1B-20" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)">
+					<param name="Функция" path="CommonSets.InputB1.19.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.19.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.19.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.19.Tvr"/>
+				</group>
+				<group name="Вход 1B-21" visible="((Config() &amp; 0xFF00) != 0xc00) &amp;&amp; ((Config() &amp; 0xFF00) != 0x500)">
+					<param name="Функция" path="CommonSets.InputB1.20.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB1.20.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB1.20.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB1.20.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 2B" visible="((Config() &amp; 0xFF00) &gt; 0x400) &amp;&amp; ((Config() &amp; 0xFF00) &lt; 0xd00)">
+				<group name="Вход 2B-1">
+					<param name="Функция" path="CommonSets.InputB2.0.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.0.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.0.Tvr"/>
+				</group>
+				<group name="Вход 2B-2">
+					<param name="Функция" path="CommonSets.InputB2.1.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.1.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.1.Tvr"/>
+				</group>
+				<group name="Вход 2B-3">
+					<param name="Функция" path="CommonSets.InputB2.2.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.2.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.2.Tvr"/>
+				</group>
+				<group name="Вход 2B-4">
+					<param name="Функция" path="CommonSets.InputB2.3.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.3.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.3.Tvr"/>
+				</group>
+				<group name="Вход 2B-5">
+					<param name="Функция" path="CommonSets.InputB2.4.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.4.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.4.Tvr"/>
+				</group>
+				<group name="Вход 2B-6">
+					<param name="Функция" path="CommonSets.InputB2.5.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.5.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.5.Tvr"/>
+				</group>
+				<group name="Вход 2B-7">
+					<param name="Функция" path="CommonSets.InputB2.6.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.6.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.6.Tvr"/>
+				</group>
+				<group name="Вход 2B-8">
+					<param name="Функция" path="CommonSets.InputB2.7.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.7.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.7.Tvr"/>
+				</group>
+				<group name="Вход 2B-9">
+					<param name="Функция" path="CommonSets.InputB2.8.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.8.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.8.Tvr"/>
+				</group>
+				<group name="Вход 2B-10">
+					<param name="Функция" path="CommonSets.InputB2.9.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.9.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.9.Tvr"/>
+				</group>
+				<group name="Вход 2B-11">
+					<param name="Функция" path="CommonSets.InputB2.10.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.10.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.10.Tvr"/>
+				</group>
+				<group name="Вход 2B-12">
+					<param name="Функция" path="CommonSets.InputB2.11.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.11.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.11.Tvr"/>
+				</group>
+				<group name="Вход 2B-13" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.12.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.12.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.12.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.12.Tvr"/>
+				</group>
+				<group name="Вход 2B-14" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.13.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.13.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.13.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.13.Tvr"/>
+				</group>
+				<group name="Вход 2B-15" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.14.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.14.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.14.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.14.Tvr"/>
+				</group>
+				<group name="Вход 2B-16" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.15.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.15.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.15.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.15.Tvr"/>
+				</group>
+				<group name="Вход 2B-17" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.16.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.16.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.16.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.16.Tvr"/>
+				</group>
+				<group name="Вход 2B-18" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.17.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.17.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.17.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.17.Tvr"/>
+				</group>
+				<group name="Вход 2B-19" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.18.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.18.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.18.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.18.Tvr"/>
+				</group>
+				<group name="Вход 2B-20" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.19.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.19.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.19.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.19.Tvr"/>
+				</group>
+				<group name="Вход 2B-21" visible="(Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB2.20.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB2.20.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB2.20.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB2.20.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 3B" visible="((Config() &amp; 0xFF00) &gt; 0x800) &amp;&amp; ((Config() &amp; 0xFF00) &lt; 0xc00)">
+				<group name="Вход 3B-1">
+					<param name="Функция" path="CommonSets.InputB3.0.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.0.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.0.Tvr"/>
+				</group>
+				<group name="Вход 3B-2">
+					<param name="Функция" path="CommonSets.InputB3.1.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.1.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.1.Tvr"/>
+				</group>
+				<group name="Вход 3B-3">
+					<param name="Функция" path="CommonSets.InputB3.2.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.2.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.2.Tvr"/>
+				</group>
+				<group name="Вход 3B-4">
+					<param name="Функция" path="CommonSets.InputB3.3.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.3.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.3.Tvr"/>
+				</group>
+				<group name="Вход 3B-5">
+					<param name="Функция" path="CommonSets.InputB3.4.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.4.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.4.Tvr"/>
+				</group>
+				<group name="Вход 3B-6">
+					<param name="Функция" path="CommonSets.InputB3.5.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.5.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.5.Tvr"/>
+				</group>
+				<group name="Вход 3B-7">
+					<param name="Функция" path="CommonSets.InputB3.6.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.6.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.6.Tvr"/>
+				</group>
+				<group name="Вход 3B-8">
+					<param name="Функция" path="CommonSets.InputB3.7.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.7.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.7.Tvr"/>
+				</group>
+				<group name="Вход 3B-9">
+					<param name="Функция" path="CommonSets.InputB3.8.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.8.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.8.Tvr"/>
+				</group>
+				<group name="Вход 3B-10">
+					<param name="Функция" path="CommonSets.InputB3.9.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.9.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.9.Tvr"/>
+				</group>
+				<group name="Вход 3B-11">
+					<param name="Функция" path="CommonSets.InputB3.10.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.10.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.10.Tvr"/>
+				</group>
+				<group name="Вход 3B-12">
+					<param name="Функция" path="CommonSets.InputB3.11.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.11.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.11.Tvr"/>
+				</group>
+				<group name="Вход 3B-13" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.12.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.12.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.12.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.12.Tvr"/>
+				</group>
+				<group name="Вход 3B-14" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.13.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.13.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.13.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.13.Tvr"/>
+				</group>
+				<group name="Вход 3B-15" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.14.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.14.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.14.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.14.Tvr"/>
+				</group>
+				<group name="Вход 3B-16" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.15.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.15.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.15.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.15.Tvr"/>
+				</group>
+				<group name="Вход 3B-17" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.16.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.16.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.16.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.16.Tvr"/>
+				</group>
+				<group name="Вход 3B-18" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.17.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.17.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.17.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.17.Tvr"/>
+				</group>
+				<group name="Вход 3B-19" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.18.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.18.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.18.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.18.Tvr"/>
+				</group>
+				<group name="Вход 3B-20" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.19.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.19.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.19.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.19.Tvr"/>
+				</group>
+				<group name="Вход 3B-21" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB3.20.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB3.20.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB3.20.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB3.20.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 4B" visible="(Config() &amp; 0xFF00) == 0xa00 || (Config() &amp; 0xFF00) == 0xb00">
+				<group name="Вход 4B-1">
+					<param name="Функция" path="CommonSets.InputB4.0.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.0.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.0.Tvr"/>
+				</group>
+				<group name="Вход 4B-2">
+					<param name="Функция" path="CommonSets.InputB4.1.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.1.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.1.Tvr"/>
+				</group>
+				<group name="Вход 4B-3">
+					<param name="Функция" path="CommonSets.InputB4.2.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.2.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.2.Tvr"/>
+				</group>
+				<group name="Вход 4B-4">
+					<param name="Функция" path="CommonSets.InputB4.3.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.3.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.3.Tvr"/>
+				</group>
+				<group name="Вход 4B-5">
+					<param name="Функция" path="CommonSets.InputB4.4.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.4.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.4.Tvr"/>
+				</group>
+				<group name="Вход 4B-6">
+					<param name="Функция" path="CommonSets.InputB4.5.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.5.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.5.Tvr"/>
+				</group>
+				<group name="Вход 4B-7">
+					<param name="Функция" path="CommonSets.InputB4.6.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.6.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.6.Tvr"/>
+				</group>
+				<group name="Вход 4B-8">
+					<param name="Функция" path="CommonSets.InputB4.7.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.7.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.7.Tvr"/>
+				</group>
+				<group name="Вход 4B-9">
+					<param name="Функция" path="CommonSets.InputB4.8.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.8.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.8.Tvr"/>
+				</group>
+				<group name="Вход 4B-10">
+					<param name="Функция" path="CommonSets.InputB4.9.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.9.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.9.Tvr"/>
+				</group>
+				<group name="Вход 4B-11">
+					<param name="Функция" path="CommonSets.InputB4.10.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.10.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.10.Tvr"/>
+				</group>
+				<group name="Вход 4B-12">
+					<param name="Функция" path="CommonSets.InputB4.11.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.11.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.11.Tvr"/>
+				</group>
+				<group name="Вход 4B-13" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.12.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.12.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.12.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.12.Tvr"/>
+				</group>
+				<group name="Вход 4B-14" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.13.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.13.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.13.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.13.Tvr"/>
+				</group>
+				<group name="Вход 4B-15" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.14.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.14.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.14.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.14.Tvr"/>
+				</group>
+				<group name="Вход 4B-16" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.15.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.15.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.15.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.15.Tvr"/>
+				</group>
+				<group name="Вход 4B-17" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.16.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.16.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.16.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.16.Tvr"/>
+				</group>
+				<group name="Вход 4B-18" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.17.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.17.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.17.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.17.Tvr"/>
+				</group>
+				<group name="Вход 4B-19" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.18.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.18.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.18.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.18.Tvr"/>
+				</group>
+				<group name="Вход 4B-20" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.19.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.19.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.19.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.19.Tvr"/>
+				</group>
+				<group name="Вход 4B-21" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Функция" path="CommonSets.InputB4.20.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB4.20.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB4.20.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB4.20.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 5B" visible="(Config() &amp; 0xFF00) == 0xb00">
+				<group name="Вход 5B-1">
+					<param name="Функция" path="CommonSets.InputB5.0.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.0.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.0.Tvr"/>
+				</group>
+				<group name="Вход 5B-2">
+					<param name="Функция" path="CommonSets.InputB5.1.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.1.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.1.Tvr"/>
+				</group>
+				<group name="Вход 5B-3">
+					<param name="Функция" path="CommonSets.InputB5.2.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.2.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.2.Tvr"/>
+				</group>
+				<group name="Вход 5B-4">
+					<param name="Функция" path="CommonSets.InputB5.3.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.3.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.3.Tvr"/>
+				</group>
+				<group name="Вход 5B-5">
+					<param name="Функция" path="CommonSets.InputB5.4.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.4.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.4.Tvr"/>
+				</group>
+				<group name="Вход 5B-6">
+					<param name="Функция" path="CommonSets.InputB5.5.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.5.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.5.Tvr"/>
+				</group>
+				<group name="Вход 5B-7">
+					<param name="Функция" path="CommonSets.InputB5.6.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.6.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.6.Tvr"/>
+				</group>
+				<group name="Вход 5B-8">
+					<param name="Функция" path="CommonSets.InputB5.7.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.7.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.7.Tvr"/>
+				</group>
+				<group name="Вход 5B-9">
+					<param name="Функция" path="CommonSets.InputB5.8.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.8.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.8.Tvr"/>
+				</group>
+				<group name="Вход 5B-10">
+					<param name="Функция" path="CommonSets.InputB5.9.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.9.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.9.Tvr"/>
+				</group>
+				<group name="Вход 5B-11">
+					<param name="Функция" path="CommonSets.InputB5.10.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.10.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.10.Tvr"/>
+				</group>
+				<group name="Вход 5B-12">
+					<param name="Функция" path="CommonSets.InputB5.11.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.11.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.11.Tvr"/>
+				</group>
+				<group name="Вход 5B-13">
+					<param name="Функция" path="CommonSets.InputB5.12.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.12.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.12.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.12.Tvr"/>
+				</group>
+				<group name="Вход 5B-14">
+					<param name="Функция" path="CommonSets.InputB5.13.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.13.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.13.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.13.Tvr"/>
+				</group>
+				<group name="Вход 5B-15">
+					<param name="Функция" path="CommonSets.InputB5.14.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.14.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.14.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.14.Tvr"/>
+				</group>
+				<group name="Вход 5B-16">
+					<param name="Функция" path="CommonSets.InputB5.15.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.15.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.15.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.15.Tvr"/>
+				</group>
+				<group name="Вход 5B-17">
+					<param name="Функция" path="CommonSets.InputB5.16.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.16.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.16.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.16.Tvr"/>
+				</group>
+				<group name="Вход 5B-18">
+					<param name="Функция" path="CommonSets.InputB5.17.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.17.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.17.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.17.Tvr"/>
+				</group>
+				<group name="Вход 5B-19">
+					<param name="Функция" path="CommonSets.InputB5.18.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.18.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.18.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.18.Tvr"/>
+				</group>
+				<group name="Вход 5B-20">
+					<param name="Функция" path="CommonSets.InputB5.19.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.19.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.19.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.19.Tvr"/>
+				</group>
+				<group name="Вход 5B-21">
+					<param name="Функция" path="CommonSets.InputB5.20.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB5.20.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB5.20.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB5.20.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 6B" visible="(Config() &amp; 0xFF00) == 0xb00">
+				<group name="Вход 6B-1">
+					<param name="Функция" path="CommonSets.InputB6.0.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.0.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.0.Tvr"/>
+				</group>
+				<group name="Вход 6B-2">
+					<param name="Функция" path="CommonSets.InputB6.1.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.1.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.1.Tvr"/>
+				</group>
+				<group name="Вход 6B-3">
+					<param name="Функция" path="CommonSets.InputB6.2.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.2.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.2.Tvr"/>
+				</group>
+				<group name="Вход 6B-4">
+					<param name="Функция" path="CommonSets.InputB6.3.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.3.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.3.Tvr"/>
+				</group>
+				<group name="Вход 6B-5">
+					<param name="Функция" path="CommonSets.InputB6.4.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.4.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.4.Tvr"/>
+				</group>
+				<group name="Вход 6B-6">
+					<param name="Функция" path="CommonSets.InputB6.5.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.5.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.5.Tvr"/>
+				</group>
+				<group name="Вход 6B-7">
+					<param name="Функция" path="CommonSets.InputB6.6.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.6.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.6.Tvr"/>
+				</group>
+				<group name="Вход 6B-8">
+					<param name="Функция" path="CommonSets.InputB6.7.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.7.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.7.Tvr"/>
+				</group>
+				<group name="Вход 6B-9">
+					<param name="Функция" path="CommonSets.InputB6.8.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.8.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.8.Tvr"/>
+				</group>
+				<group name="Вход 6B-10" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.9.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.9.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.9.Tvr"/>
+				</group>
+				<group name="Вход 6B-11" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.10.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.10.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.10.Tvr"/>
+				</group>
+				<group name="Вход 6B-12" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.11.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.11.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.11.Tvr"/>
+				</group>
+				<group name="Вход 6B-13" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.12.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.12.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.12.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.12.Tvr"/>
+				</group>
+				<group name="Вход 6B-14" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.13.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.13.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.13.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.13.Tvr"/>
+				</group>
+				<group name="Вход 6B-15" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.14.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.14.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.14.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.14.Tvr"/>
+				</group>
+				<group name="Вход 6B-16" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.15.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.15.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.15.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.15.Tvr"/>
+				</group>
+				<group name="Вход 6B-17" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.16.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.16.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.16.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.16.Tvr"/>
+				</group>
+				<group name="Вход 6B-18" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.17.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.17.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.17.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.17.Tvr"/>
+				</group>
+				<group name="Вход 6B-19" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.18.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.18.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.18.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.18.Tvr"/>
+				</group>
+				<group name="Вход 6B-20" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.19.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.19.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.19.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.19.Tvr"/>
+				</group>
+				<group name="Вход 6B-21" visible="False()">
+					<param name="Функция" path="CommonSets.InputB6.20.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputB6.20.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputB6.20.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputB6.20.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 1D" visible="((Config() &amp; 0xFF00) != 0xc00)">
+				<group name="Вход 1D-1">
+					<param name="Функция" path="CommonSets.InputD1.0.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.0.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.0.Tvr"/>
+				</group>
+				<group name="Вход 1D-2">
+					<param name="Функция" path="CommonSets.InputD1.1.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.1.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.1.Tvr"/>
+				</group>
+				<group name="Вход 1D-3">
+					<param name="Функция" path="CommonSets.InputD1.2.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.2.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.2.Tvr"/>
+				</group>
+				<group name="Вход 1D-4">
+					<param name="Функция" path="CommonSets.InputD1.3.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.3.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.3.Tvr"/>
+				</group>
+				<group name="Вход 1D-5">
+					<param name="Функция" path="CommonSets.InputD1.4.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.4.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.4.Tvr"/>
+				</group>
+				<group name="Вход 1D-6">
+					<param name="Функция" path="CommonSets.InputD1.5.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.5.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.5.Tvr"/>
+				</group>
+				<group name="Вход 1D-7">
+					<param name="Функция" path="CommonSets.InputD1.6.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.6.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.6.Tvr"/>
+				</group>
+				<group name="Вход 1D-8">
+					<param name="Функция" path="CommonSets.InputD1.7.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.7.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.7.Tvr"/>
+				</group>
+				<group name="Вход 1D-9">
+					<param name="Функция" path="CommonSets.InputD1.8.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.8.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.8.Tvr"/>
+				</group>
+				<group name="Вход 1D-10" visible="(Config() &amp; 0xFF00) &lt; 0xb00 || (Config() &amp; 0xFF00) == 0xd00">
+					<param name="Функция" path="CommonSets.InputD1.9.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.9.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.9.Tvr"/>
+				</group>
+				<group name="Вход 1D-11" visible="(Config() &amp; 0xFF00) &lt; 0xb00 || (Config() &amp; 0xFF00) == 0xd00">
+					<param name="Функция" path="CommonSets.InputD1.10.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.10.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.10.Tvr"/>
+				</group>
+				<group name="Вход 1D-12" visible="(Config() &amp; 0xFF00) &lt; 0xb00 || (Config() &amp; 0xFF00) == 0xd00">
+					<param name="Функция" path="CommonSets.InputD1.11.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.11.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.11.Tvr"/>
+				</group>
+				<group name="Вход 1D-13" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xd00">
+					<param name="Функция" path="CommonSets.InputD1.12.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.12.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.12.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.12.Tvr"/>
+				</group>
+				<group name="Вход 1D-14" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800 || (Config() &amp; 0xFF00) == 0xd00">
+					<param name="Функция" path="CommonSets.InputD1.13.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.13.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.13.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.13.Tvr"/>
+				</group>
+				<group name="Вход 1D-15" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputD1.14.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.14.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.14.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.14.Tvr"/>
+				</group>
+				<group name="Вход 1D-16" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputD1.15.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.15.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.15.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.15.Tvr"/>
+				</group>
+				<group name="Вход 1D-17" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputD1.16.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.16.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.16.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.16.Tvr"/>
+				</group>
+				<group name="Вход 1D-18" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputD1.17.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.17.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.17.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.17.Tvr"/>
+				</group>
+				<group name="Вход 1D-19" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputD1.18.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.18.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.18.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.18.Tvr"/>
+				</group>
+				<group name="Вход 1D-20" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputD1.19.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.19.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.19.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.19.Tvr"/>
+				</group>
+				<group name="Вход 1D-21" visible="(Config() &amp; 0xFF00) &lt; 0x200 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputD1.20.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputD1.20.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputD1.20.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputD1.20.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 1E">
+				<group name="Вход 1E-1">
+					<param name="Функция" path="CommonSets.InputE1.0.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.0.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.0.Tvr"/>
+				</group>
+				<group name="Вход 1E-2">
+					<param name="Функция" path="CommonSets.InputE1.1.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.1.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.1.Tvr"/>
+				</group>
+				<group name="Вход 1E-3">
+					<param name="Функция" path="CommonSets.InputE1.2.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.2.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.2.Tvr"/>
+				</group>
+				<group name="Вход 1E-4">
+					<param name="Функция" path="CommonSets.InputE1.3.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.3.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.3.Tvr"/>
+				</group>
+				<group name="Вход 1E-5">
+					<param name="Функция" path="CommonSets.InputE1.4.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.4.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.4.Tvr"/>
+				</group>
+				<group name="Вход 1E-6">
+					<param name="Функция" path="CommonSets.InputE1.5.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.5.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.5.Tvr"/>
+				</group>
+				<group name="Вход 1E-7">
+					<param name="Функция" path="CommonSets.InputE1.6.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.6.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.6.Tvr"/>
+				</group>
+				<group name="Вход 1E-8">
+					<param name="Функция" path="CommonSets.InputE1.7.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.7.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.7.Tvr"/>
+				</group>
+				<group name="Вход 1E-9">
+					<param name="Функция" path="CommonSets.InputE1.8.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.8.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.8.Tvr"/>
+				</group>
+				<group name="Вход 1E-10">
+					<param name="Функция" path="CommonSets.InputE1.9.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.9.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.9.Tvr"/>
+				</group>
+				<group name="Вход 1E-11">
+					<param name="Функция" path="CommonSets.InputE1.10.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.10.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.10.Tvr"/>
+				</group>
+				<group name="Вход 1E-12">
+					<param name="Функция" path="CommonSets.InputE1.11.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.11.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.11.Tvr"/>
+				</group>
+				<group name="Вход 1E-13" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.12.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.12.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.12.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.12.Tvr"/>
+				</group>
+				<group name="Вход 1E-14" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.13.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.13.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.13.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.13.Tvr"/>
+				</group>
+				<group name="Вход 1E-15" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.14.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.14.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.14.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.14.Tvr"/>
+				</group>
+				<group name="Вход 1E-16" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.15.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.15.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.15.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.15.Tvr"/>
+				</group>
+				<group name="Вход 1E-17" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.16.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.16.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.16.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.16.Tvr"/>
+				</group>
+				<group name="Вход 1E-18" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.17.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.17.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.17.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.17.Tvr"/>
+				</group>
+				<group name="Вход 1E-19" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.18.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.18.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.18.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.18.Tvr"/>
+				</group>
+				<group name="Вход 1E-20" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.19.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.19.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.19.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.19.Tvr"/>
+				</group>
+				<group name="Вход 1E-21" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.20.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.20.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.20.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.20.Tvr"/>
+				</group>
+				<group name="Вход 1E-22" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.21.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.21.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.21.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.21.Tvr"/>
+				</group>
+				<group name="Вход 1E-23" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.22.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.22.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.22.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.22.Tvr"/>
+				</group>
+				<group name="Вход 1E-24" visible="(Config() &amp; 0xFF00) == 0x100 || (Config() &amp; 0xFF00) == 0x400 || (Config() &amp; 0xFF00) == 0x500 || (Config() &amp; 0xFF00) == 0x800">
+					<param name="Функция" path="CommonSets.InputE1.23.Mux"/>
+					<param name="Активный уровень" path="CommonSets.InputE1.23.Signal"/>
+					<param name="Тсраб" path="CommonSets.InputE1.23.Tsr"/>
+					<param name="Твозвр" path="CommonSets.InputE1.23.Tvr"/>
+				</group>
+			</group>
+		</group>
+		<group name="Реле" visible="((Config() &amp; 0xFF00) != 0x100) &amp;&amp; ((Config() &amp; 0xFF00) != 0x400) &amp;&amp; ((Config() &amp; 0xFF00) != 0x800)">
+			<group name="Модуль 1B" visible="((Config() &amp; 0xFF00) == 0x500) || ((Config() &amp; 0xFF00) == 0xc00)">
+				<group name="Реле 1B-1">
+					<param name="Точка подключения" path="CommonSets.ReleB1.0.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB1.0.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB1.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB1.0.Tvr"/>
+				</group>
+				<group name="Реле 1B-2">
+					<param name="Точка подключения" path="CommonSets.ReleB1.1.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB1.1.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB1.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB1.1.Tvr"/>
+				</group>
+				<group name="Реле 1B-3">
+					<param name="Точка подключения" path="CommonSets.ReleB1.2.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB1.2.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB1.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB1.2.Tvr"/>
+				</group>
+				<group name="Реле 1B-4">
+					<param name="Точка подключения" path="CommonSets.ReleB1.3.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB1.3.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB1.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB1.3.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 2B" visible="((Config() &amp; 0xFF00) == 0x600) || ((Config() &amp; 0xFF00) == 0x700) || ((Config() &amp; 0xFF00) == 0x900) || ((Config() &amp; 0xFF00) == 0xc00)">
+				<group name="Реле 2B-1" visible="(Config() &amp; 0xFF00) != 0x900">
+					<param name="Точка подключения" path="CommonSets.ReleB2.0.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.0.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.0.Tvr"/>
+				</group>
+				<group name="Реле 2B-2" visible="(Config() &amp; 0xFF00) != 0x900">
+					<param name="Точка подключения" path="CommonSets.ReleB2.1.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.1.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.1.Tvr"/>
+				</group>
+				<group name="Реле 2B-3" visible="(Config() &amp; 0xFF00) != 0x900">
+					<param name="Точка подключения" path="CommonSets.ReleB2.2.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.2.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.2.Tvr"/>
+				</group>
+				<group name="Реле 2B-4">
+					<param name="Точка подключения" path="CommonSets.ReleB2.3.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.3.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.3.Tvr"/>
+				</group>
+				<group name="Реле 2B-5">
+					<param name="Точка подключения" path="CommonSets.ReleB2.4.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.4.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.4.Tvr"/>
+				</group>
+				<group name="Реле 2B-6">
+					<param name="Точка подключения" path="CommonSets.ReleB2.5.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.5.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.5.Tvr"/>
+				</group>
+				<group name="Реле 2B-7" visible="(Config() &amp; 0xFF00) != 0x900">
+					<param name="Точка подключения" path="CommonSets.ReleB2.6.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.6.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.6.Tvr"/>
+				</group>
+				<group name="Реле 2B-8" visible="(Config() &amp; 0xFF00) != 0x900">
+					<param name="Точка подключения" path="CommonSets.ReleB2.7.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.7.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.7.Tvr"/>
+				</group>
+				<group name="Реле 2B-9" visible="(Config() &amp; 0xFF00) != 0x900">
+					<param name="Точка подключения" path="CommonSets.ReleB2.8.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB2.8.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB2.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB2.8.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 3B" visible="(Config() &amp; 0xFF00) == 0x900 || (Config() &amp; 0xFF00) == 0xa00">
+				<group name="Реле 3B-4">
+					<param name="Точка подключения" path="CommonSets.ReleB3.3.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB3.3.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB3.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB3.3.Tvr"/>
+				</group>
+				<group name="Реле 3B-5">
+					<param name="Точка подключения" path="CommonSets.ReleB3.4.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB3.4.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB3.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB3.4.Tvr"/>
+				</group>
+				<group name="Реле 3B-6">
+					<param name="Точка подключения" path="CommonSets.ReleB3.5.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB3.5.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB3.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB3.5.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 4B" visible="(Config() &amp; 0xFF00) == 0xa00">
+				<group name="Реле 4B-4">
+					<param name="Точка подключения" path="CommonSets.ReleB4.3.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB4.3.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB4.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB4.3.Tvr"/>
+				</group>
+				<group name="Реле 4B-5">
+					<param name="Точка подключения" path="CommonSets.ReleB4.4.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB4.4.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB4.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB4.4.Tvr"/>
+				</group>
+				<group name="Реле 4B-6">
+					<param name="Точка подключения" path="CommonSets.ReleB4.5.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB4.5.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB4.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB4.5.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 6B" visible="(Config() &amp; 0xFF00) == 0xb00">
+				<group name="Реле 6B-1">
+					<param name="Точка подключения" path="CommonSets.ReleB6.0.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.0.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.0.Tvr"/>
+				</group>
+				<group name="Реле 6B-2">
+					<param name="Точка подключения" path="CommonSets.ReleB6.1.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.1.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.1.Tvr"/>
+				</group>
+				<group name="Реле 6B-3">
+					<param name="Точка подключения" path="CommonSets.ReleB6.2.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.2.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.2.Tvr"/>
+				</group>
+				<group name="Реле 6B-4">
+					<param name="Точка подключения" path="CommonSets.ReleB6.3.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.3.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.3.Tvr"/>
+				</group>
+				<group name="Реле 6B-5">
+					<param name="Точка подключения" path="CommonSets.ReleB6.4.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.4.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.4.Tvr"/>
+				</group>
+				<group name="Реле 6B-6">
+					<param name="Точка подключения" path="CommonSets.ReleB6.5.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.5.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.5.Tvr"/>
+				</group>
+				<group name="Реле 6B-7">
+					<param name="Точка подключения" path="CommonSets.ReleB6.6.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.6.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.6.Tvr"/>
+				</group>
+				<group name="Реле 6B-8">
+					<param name="Точка подключения" path="CommonSets.ReleB6.7.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.7.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.7.Tvr"/>
+				</group>
+				<group name="Реле 6B-9">
+					<param name="Точка подключения" path="CommonSets.ReleB6.8.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.8.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.8.Tvr"/>
+				</group>
+				<group name="Реле 6B-10">
+					<param name="Точка подключения" path="CommonSets.ReleB6.9.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.9.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.9.Tvr"/>
+				</group>
+				<group name="Реле 6B-11">
+					<param name="Точка подключения" path="CommonSets.ReleB6.10.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.10.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.10.Tvr"/>
+				</group>
+				<group name="Реле 6B-12">
+					<param name="Точка подключения" path="CommonSets.ReleB6.11.Mux"/>
+					<param name="Режим" path="CommonSets.ReleB6.11.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleB6.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleB6.11.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 1D" visible="((Config() &amp; 0xFF00) != 0x500) &amp;&amp; ((Config() &amp; 0xFF00) != 0xc00)">
+				<group name="Реле 1D-1" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00 || (Config() &amp; 0xFF00) == 0xd00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.0.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.0.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.0.Tvr"/>
+				</group>
+				<group name="Реле 1D-2" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00 || (Config() &amp; 0xFF00) == 0xd00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.1.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.1.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.1.Tvr"/>
+				</group>
+				<group name="Реле 1D-3" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00 || (Config() &amp; 0xFF00) == 0xd00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.2.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.2.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.2.Tvr"/>
+				</group>
+				<group name="Реле 1D-4">
+					<param name="Точка подключения" path="CommonSets.ReleD1.3.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.3.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.3.Tvr"/>
+				</group>
+				<group name="Реле 1D-5" visible="(Config() &amp; 0xFF00) != 0xd00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.4.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.4.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.4.Tvr"/>
+				</group>
+				<group name="Реле 1D-6" visible="(Config() &amp; 0xFF00) != 0xd00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.5.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.5.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.5.Tvr"/>
+				</group>
+				<group name="Реле 1D-7" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.6.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.6.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.6.Tvr"/>
+				</group>
+				<group name="Реле 1D-8" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.7.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.7.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.7.Tvr"/>
+				</group>
+				<group name="Реле 1D-9" visible="(Config() &amp; 0xFF00) == 0x300 || (Config() &amp; 0xFF00) == 0x700 || (Config() &amp; 0xFF00) == 0xb00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.8.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.8.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.8.Tvr"/>
+				</group>
+				<group name="Реле 1D-10" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.9.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.9.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.9.Tvr"/>
+				</group>
+				<group name="Реле 1D-11" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.10.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.10.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.10.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.10.Tvr"/>
+				</group>
+				<group name="Реле 1D-12" visible="(Config() &amp; 0xFF00) == 0xb00">
+					<param name="Точка подключения" path="CommonSets.ReleD1.11.Mux"/>
+					<param name="Режим" path="CommonSets.ReleD1.11.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleD1.11.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleD1.11.Tvr"/>
+				</group>
+			</group>
+			<group name="Модуль 1E" visible="((Config() &amp; 0xFF00) != 0x500)">
+				<group name="Реле 1E-1">
+					<param name="Точка подключения" path="CommonSets.ReleE1.0.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.0.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.0.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.0.Tvr"/>
+				</group>
+				<group name="Реле 1E-2">
+					<param name="Точка подключения" path="CommonSets.ReleE1.1.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.1.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.1.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.1.Tvr"/>
+				</group>
+				<group name="Реле 1E-3">
+					<param name="Точка подключения" path="CommonSets.ReleE1.2.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.2.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.2.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.2.Tvr"/>
+				</group>
+				<group name="Реле 1E-4">
+					<param name="Точка подключения" path="CommonSets.ReleE1.3.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.3.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.3.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.3.Tvr"/>
+				</group>
+				<group name="Реле 1E-5">
+					<param name="Точка подключения" path="CommonSets.ReleE1.4.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.4.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.4.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.4.Tvr"/>
+				</group>
+				<group name="Реле 1E-6">
+					<param name="Точка подключения" path="CommonSets.ReleE1.5.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.5.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.5.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.5.Tvr"/>
+				</group>
+				<group name="Реле 1E-7">
+					<param name="Точка подключения" path="CommonSets.ReleE1.6.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.6.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.6.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.6.Tvr"/>
+				</group>
+				<group name="Реле 1E-8">
+					<param name="Точка подключения" path="CommonSets.ReleE1.7.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.7.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.7.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.7.Tvr"/>
+				</group>
+				<group name="Реле 1E-9">
+					<param name="Точка подключения" path="CommonSets.ReleE1.8.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.8.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.8.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.8.Tvr"/>
+				</group>
+				<group name="Реле 1E-10">
+					<param name="Точка подключения" path="CommonSets.ReleE1.9.Mux"/>
+					<param name="Режим" path="CommonSets.ReleE1.9.Mode"/>
+					<param name="Tсраб" path="CommonSets.ReleE1.9.Tsr"/>
+					<param name="Твозвр" path="CommonSets.ReleE1.9.Tvr"/>
+				</group>
+			</group>
+		</group>
+		<group name="Выключатели" visible="(Config() &amp; 0xFF00) == 0x200 || (Config() &amp; 0xFF00) == 0x600 || (Config() &amp; 0xFF00) == 0x900 || (Config() &amp; 0xFF00) == 0xa00">
+			<group name="Выключатель 2В" visible="(Config() &amp; 0xFF00) == 0x900">
+				<param name="Tзнф" path="Sets.0.T_ZNF_2B"/>
+				<param name="Тэмв" path="Sets.0.T_EMV_2B"/>
+				<param name="Tэмо1" path="Sets.0.T_EMO_2B_1"/>
+				<param name="Tэмо2" path="Sets.0.T_EMO_2B_2"/>
+			</group>
+			<group name="Выключатель 3В" visible="(Config() &amp; 0xFF00) == 0x900 || (Config() &amp; 0xFF00) == 0xa00">
+				<param name="Tзнф" path="Sets.0.T_ZNF_3B"/>
+				<param name="Тэмв" path="Sets.0.T_EMV_3B"/>
+				<param name="Tэмо1" path="Sets.0.T_EMO_3B_1"/>
+				<param name="Tэмо2" path="Sets.0.T_EMO_3B_2"/>
+			</group>
+			<group name="Выключатель 4В" visible="(Config() &amp; 0xFF00) == 0xa00">
+				<param name="Tзнф" path="Sets.0.T_ZNF_4B"/>
+				<param name="Тэмв" path="Sets.0.T_EMV_4B"/>
+				<param name="Tэмо1" path="Sets.0.T_EMO_4B_1"/>
+				<param name="Tэмо2" path="Sets.0.T_EMO_4B_2"/>
+			</group>
+			<group name="Выключатель 1D" visible="(Config() &amp; 0xFF00) == 0x200 || (Config() &amp; 0xFF00) == 0x600 || (Config() &amp; 0xFF00) == 0x900 || (Config() &amp; 0xFF00) == 0xa00">
+				<param name="Tзнф" path="Sets.0.T_ZNF_1D"/>
+				<param name="Тэмв" path="Sets.0.T_EMV_1D"/>
+				<param name="Tэмо1" path="Sets.0.T_EMO_1D_1"/>
+				<param name="Tэмо2" path="Sets.0.T_EMO_1D_2"/>
+			</group>
+		</group>
+		<group name="Логометр" visible="((Config() &amp; 0xff00) == 0xd00)||((Config() &amp; 0xff00) == 0xc00)||((Config() &amp; 0xff00) == 0x500)">
+			<param name="Начальная ступень РПН" path="Sets.0.Min_Stup"/>
+			<param name="Конечная ступень РПН" path="Sets.0.Max_Stup"/>
+			<param name="Тип датчика" path="Sets.0.Logometer"/>
+			<param name="Сопротивление ступени" path="Sets.0.Rstup"/>
+			<param name="Ток ступени" path="Sets.0.Istep"/>
+			<param name="Ток ступени №1" path="Sets.0.Ifst"/>
+			<param name="Выход.полож." path="Sets.0.Log_Output1"/>
+		</group>
+	</group>
+</section>
+<section name="Настройки">
+	<param name="Дата и время" path="Settings.CurrTime"/>
+	<param name="Смещение от UTC" path="Settings.SyncUTCOffset" />
+	<group name="Порт RS1">
+		<param name="Адрес" path="Settings.Port.1.Address" />
+		<param name="Скорость" path="Settings.Port.1.Rate" />
+		<param name="Четность" path="Settings.Port.1.Parity" />
+		<param name="Стоп бит" path="Settings.Port.1.Stop" />
+	</group>
+	<group name="Порт RS2">
+		<param name="Адрес" path="Settings.Port.2.Address" />
+		<param name="Скорость" path="Settings.Port.2.Rate" />
+		<param name="Четность" path="Settings.Port.2.Parity" />
+		<param name="Стоп бит" path="Settings.Port.2.Stop" />
+	</group>
+	<group name="Порт Eth1">
+		<param name="IP адрес" path="Settings.Ethernet_IP" />
+		<param name="Маска подсети" path="Settings.Ethernet_Mask" />
+		<param name="Шлюз" path="Settings.Ethernet_GW" />
+	</group>
+	<group name="Порт Eth2" visible="(Settings.RedMod==0)">
+		<param name="IP адрес" path="Settings.Ethernet2_IP" />
+		<param name="Маска подсети" path="Settings.Ethernet2_Mask" />
+		<param name="Шлюз" path="Settings.Ethernet2_GW" />
+	</group>
+	<group name="Синхронизация">
+		<param name="Импульс" path="Settings.SyncType" />
+		<param name="Порт" path="Settings.SyncPort" />
+		<param name="Синхр.по сети" path="Settings.SyncNet" />
+		<param name="Туд.синхр." path="Settings.SyncHoldOvTime" />
+		<group name="SNTP" >
+			<param name="IP адрес (осн.)" path="Settings.SNTP_IP" />
+			<param name="IP адрес (рез.)" path="Settings.SNTP_IP_Reserve" />
+			<param name="Период синхр." path="Settings.SyncPeriod" />
+			<param name="Тож. сервера" path="Settings.SyncWait" />
+		</group>
+	</group>
+	<group name="Резервирование">
+		<param name="Протокол" path="Settings.RedMod" />
+	</group>
+</section>
+<section name="Событие">
+	<param name="1. РПВ выкл. 2В"/>
+	<param name="2. РПО выкл. 2В"/>
+	<param name="3. Вкл.выкл. 2В"/>
+	<param name="4. Откл.выкл. 2В"/>
+	<param name="5. Сраб.ЗНФ выкл.2В"/>
+	<param name="6. Контр.I ЭМВ 2B"/>
+	<param name="7. Контр.I ЭМО1 2B"/>
+	<param name="8. Контр.I ЭМО2 2B"/>
+	<param name="9. Контр.U ЭМВ 2B"/>
+	<param name="10. Контр.U ЭМО1 2B"/>
+	<param name="11. Контр.U ЭМО2 2B"/>
+	<param name="12. Сраб.защ.по I ЭМВ 2B"/>
+	<param name="13. Сраб.защ.по I ЭМО1 2B"/>
+	<param name="14. Сраб.защ.по I ЭМО2 2B"/>
+	<param name="15. РПВ выкл.3В"/>
+	<param name="16. РПО выкл.3В"/>
+	<param name="17. Вкл.выкл.3В"/>
+	<param name="18. Откл.выкл.3В"/>
+	<param name="19. Сраб.ЗНФ выкл.3В"/>
+	<param name="20. Контр.ЭМВ 3B"/>
+	<param name="21. Контр.I ЭМО1 3B"/>
+	<param name="22. Контр.I ЭМО2 3B"/>
+	<param name="23. Контр.U ЭМВ 3В"/>
+	<param name="24. Контр.U ЭМО1 3В"/>
+	<param name="25. Контр.U ЭМО2 3В"/>
+	<param name="26. Сраб.защ.по I ЭМВ 3В"/>
+	<param name="27. Сраб.защ.по I ЭМО1 3В"/>
+	<param name="28. Сраб.защ.по I ЭМО2 3В"/>
+	<param name="29. РПВ выкл.4В"/>
+	<param name="30. РПО выкл.4В"/>
+	<param name="31. Вкл.выкл.4В"/>
+	<param name="32. Откл.выкл.4В"/>
+	<param name="33. Сраб.ЗНФ выкл.4В"/>
+	<param name="34. Контр.I ЭМВ 4B"/>
+	<param name="35. Контр.I ЭМО1 4B"/>
+	<param name="36. Контр.I ЭМО2 4B"/>
+	<param name="37. Контр.U ЭМВ 4В"/>
+	<param name="38. Контр.U ЭМО1 4В"/>
+	<param name="39. Контр.U ЭМО2 4В"/>
+	<param name="40. Сраб.защ.по I ЭМВ 4В"/>
+	<param name="41. Сраб.защ.по I ЭМО1 4В"/>
+	<param name="42. Сраб.защ.по I ЭМО2 4В"/>
+	<param name="43. РПВ выкл.1D"/>
+	<param name="44. РПО выкл.1D"/>
+	<param name="45. Вкл.выкл.1D"/>
+	<param name="46. Откл.выкл.1D"/>
+	<param name="47. Сраб.ЗНФ выкл.1D"/>
+	<param name="48. Контр.I ЭМВ 1D"/>
+	<param name="49. Контр.I ЭМО1 1D"/>
+	<param name="50. Контр.I ЭМО2 1D"/>
+	<param name="51. Контр.U ЭМВ 1D"/>
+	<param name="52. Контр.U ЭМО1 1D"/>
+	<param name="53. Контр.U ЭМО2 1D"/>
+	<param name="54. Сраб.защ.по I ЭМВ 1D"/>
+	<param name="55. Сраб.защ.по I ЭМО1 1D"/>
+	<param name="56. Сраб.защ.по I ЭМО2 1D"/>
+	<param name="57. РПВ КА1"/>
+	<param name="58. РПО КА1"/>
+	<param name="59. РПВ КА2"/>
+	<param name="60. РПО КА2"/>
+	<param name="61. РПВ КА3"/>
+	<param name="62. РПО КА3"/>
+	<param name="63. РПВ КА4"/>
+	<param name="64. РПО КА4"/>
+	<param name="65. РПВ КА5"/>
+	<param name="66. РПО КА5"/>
+	<param name="67. РПВ КА6"/>
+	<param name="68. РПО КА6"/>
+	<param name="69. РПВ КА7"/>
+	<param name="70. РПО КА7"/>
+	<param name="71. РПВ КА8"/>
+	<param name="72. РПО КА8"/>
+	<param name="73. РПВ КА9"/>
+	<param name="74. РПО КА9"/>
+	<param name="75. РПВ КА10"/>
+	<param name="76. РПО КА10"/>
+	<param name="77. РПВ КА11"/>
+	<param name="78. РПО КА11"/>
+	<param name="79. РПВ КА12"/>
+	<param name="80. РПО КА12"/>
+	<param name="81. РПВ КА13"/>
+	<param name="82. РПО КА13"/>
+	<param name="83. РПВ КА14"/>
+	<param name="84. РПО КА14"/>
+	<param name="85. Вход 1B-1"/>
+	<param name="86. Вход 1B-2"/>
+	<param name="87. Вход 1B-3"/>
+	<param name="88. Вход 1B-4"/>
+	<param name="89. Вход 1B-5"/>
+	<param name="90. Вход 1B-6"/>
+	<param name="91. Вход 1B-7"/>
+	<param name="92. Вход 1B-8"/>
+	<param name="93. Вход 1B-9"/>
+	<param name="94. Вход 1B-10"/>
+	<param name="95. Вход 1B-11"/>
+	<param name="96. Вход 1B-12"/>
+	<param name="97. Вход 1B-13"/>
+	<param name="98. Вход 1B-14"/>
+	<param name="99. Вход 1B-15"/>
+	<param name="100. Вход 1B-16"/>
+	<param name="101. Вход 1B-17"/>
+	<param name="102. Вход 1B-18"/>
+	<param name="103. Вход 1B-19"/>
+	<param name="104. Вход 1B-20"/>
+	<param name="105. Вход 1B-21"/>
+	<param name="106. Вход 2B-1"/>
+	<param name="107. Вход 2B-2"/>
+	<param name="108. Вход 2B-3"/>
+	<param name="109. Вход 2B-4"/>
+	<param name="110. Вход 2B-5"/>
+	<param name="111. Вход 2B-6"/>
+	<param name="112. Вход 2B-7"/>
+	<param name="113. Вход 2B-8"/>
+	<param name="114. Вход 2B-9"/>
+	<param name="115. Вход 2B-10"/>
+	<param name="116. Вход 2B-11"/>
+	<param name="117. Вход 2B-12"/>
+	<param name="118. Вход 2B-13"/>
+	<param name="119. Вход 2B-14"/>
+	<param name="120. Вход 2B-15"/>
+	<param name="121. Вход 2B-16"/>
+	<param name="122. Вход 2B-17"/>
+	<param name="123. Вход 2B-18"/>
+	<param name="124. Вход 2B-19"/>
+	<param name="125. Вход 2B-20"/>
+	<param name="126. Вход 2B-21"/>
+	<param name="127. Вход 3B-1"/>
+	<param name="128. Вход 3B-2"/>
+	<param name="129. Вход 3B-3"/>
+	<param name="130. Вход 3B-4"/>
+	<param name="131. Вход 3B-5"/>
+	<param name="132. Вход 3B-6"/>
+	<param name="133. Вход 3B-7"/>
+	<param name="134. Вход 3B-8"/>
+	<param name="135. Вход 3B-9"/>
+	<param name="136. Вход 3B-10"/>
+	<param name="137. Вход 3B-11"/>
+	<param name="138. Вход 3B-12"/>
+	<param name="139. Вход 3B-13"/>
+	<param name="140. Вход 3B-14"/>
+	<param name="141. Вход 3B-15"/>
+	<param name="142. Вход 3B-16"/>
+	<param name="143. Вход 3B-17"/>
+	<param name="144. Вход 3B-18"/>
+	<param name="145. Вход 3B-19"/>
+	<param name="146. Вход 3B-20"/>
+	<param name="147. Вход 3B-21"/>
+	<param name="148. Вход 4B-1"/>
+	<param name="149. Вход 4B-2"/>
+	<param name="150. Вход 4B-3"/>
+	<param name="151. Вход 4B-4"/>
+	<param name="152. Вход 4B-5"/>
+	<param name="153. Вход 4B-6"/>
+	<param name="154. Вход 4B-7"/>
+	<param name="155. Вход 4B-8"/>
+	<param name="156. Вход 4B-9"/>
+	<param name="157. Вход 4B-10"/>
+	<param name="158. Вход 4B-11"/>
+	<param name="159. Вход 4B-12"/>
+	<param name="160. Вход 4B-13"/>
+	<param name="161. Вход 4B-14"/>
+	<param name="162. Вход 4B-15"/>
+	<param name="163. Вход 4B-16"/>
+	<param name="164. Вход 4B-17"/>
+	<param name="165. Вход 4B-18"/>
+	<param name="166. Вход 4B-19"/>
+	<param name="167. Вход 4B-20"/>
+	<param name="168. Вход 4B-21"/>
+	<param name="169. Вход 5B-1"/>
+	<param name="170. Вход 5B-2"/>
+	<param name="171. Вход 5B-3"/>
+	<param name="172. Вход 5B-4"/>
+	<param name="173. Вход 5B-5"/>
+	<param name="174. Вход 5B-6"/>
+	<param name="175. Вход 5B-7"/>
+	<param name="176. Вход 5B-8"/>
+	<param name="177. Вход 5B-9"/>
+	<param name="178. Вход 5B-10"/>
+	<param name="179. Вход 5B-11"/>
+	<param name="180. Вход 5B-12"/>
+	<param name="181. Вход 5B-13"/>
+	<param name="182. Вход 5B-14"/>
+	<param name="183. Вход 5B-15"/>
+	<param name="184. Вход 5B-16"/>
+	<param name="185. Вход 5B-17"/>
+	<param name="186. Вход 5B-18"/>
+	<param name="187. Вход 5B-19"/>
+	<param name="188. Вход 5B-20"/>
+	<param name="189. Вход 5B-21"/>
+	<param name="190. Вход 6B-1"/>
+	<param name="191. Вход 6B-2"/>
+	<param name="192. Вход 6B-3"/>
+	<param name="193. Вход 6B-4"/>
+	<param name="194. Вход 6B-5"/>
+	<param name="195. Вход 6B-6"/>
+	<param name="196. Вход 6B-7"/>
+	<param name="197. Вход 6B-8"/>
+	<param name="198. Вход 6B-9"/>
+	<param name="199. Вход 6B-10"/>
+	<param name="200. Вход 6B-11"/>
+	<param name="201. Вход 6B-12"/>
+	<param name="202. Вход 6B-13"/>
+	<param name="203. Вход 6B-14"/>
+	<param name="204. Вход 6B-15"/>
+	<param name="205. Вход 6B-16"/>
+	<param name="206. Вход 6B-17"/>
+	<param name="207. Вход 6B-18"/>
+	<param name="208. Вход 6B-19"/>
+	<param name="209. Вход 6B-20"/>
+	<param name="210. Вход 6B-21"/>
+	<param name="211. Вход 1D-1"/>
+	<param name="212. Вход 1D-2"/>
+	<param name="213. Вход 1D-3"/>
+	<param name="214. Вход 1D-4"/>
+	<param name="215. Вход 1D-5"/>
+	<param name="216. Вход 1D-6"/>
+	<param name="217. Вход 1D-7"/>
+	<param name="218. Вход 1D-8"/>
+	<param name="219. Вход 1D-9"/>
+	<param name="220. Вход 1D-10"/>
+	<param name="221. Вход 1D-11"/>
+	<param name="222. Вход 1D-12"/>
+	<param name="223. Вход 1D-13"/>
+	<param name="224. Вход 1D-14"/>
+	<param name="225. Вход 1D-15"/>
+	<param name="226. Вход 1D-16"/>
+	<param name="227. Вход 1D-17"/>
+	<param name="228. Вход 1D-18"/>
+	<param name="229. Вход 1D-19"/>
+	<param name="230. Вход 1D-20"/>
+	<param name="231. Вход 1D-21"/>
+	<param name="232. Вход 1E-1"/>
+	<param name="233. Вход 1E-2"/>
+	<param name="234. Вход 1E-3"/>
+	<param name="235. Вход 1E-4"/>
+	<param name="236. Вход 1E-5"/>
+	<param name="237. Вход 1E-6"/>
+	<param name="238. Вход 1E-7"/>
+	<param name="239. Вход 1E-8"/>
+	<param name="240. Вход 1E-9"/>
+	<param name="241. Вход 1E-10"/>
+	<param name="242. Вход 1E-11"/>
+	<param name="243. Вход 1E-12"/>
+	<param name="244. Вход 1E-13"/>
+	<param name="245. Вход 1E-14"/>
+	<param name="246. Вход 1E-15"/>
+	<param name="247. Вход 1E-16"/>
+	<param name="248. Вход 1E-17"/>
+	<param name="249. Вход 1E-18"/>
+	<param name="250. Вход 1E-19"/>
+	<param name="251. Вход 1E-20"/>
+	<param name="252. Вход 1E-21"/>
+	<param name="253. Вход 1E-22"/>
+	<param name="254. Вход 1E-23"/>
+	<param name="255. Вход 1E-24"/>
+	<param name="256. GOOSE 1"/>
+	<param name="257. GOOSE 2"/>
+	<param name="258. GOOSE 3"/>
+	<param name="259. GOOSE 4"/>
+	<param name="260. GOOSE 5"/>
+	<param name="261. GOOSE 6"/>
+	<param name="262. GOOSE 7"/>
+	<param name="263. GOOSE 8"/>
+	<param name="264. GOOSE 9"/>
+	<param name="265. GOOSE 10"/>
+	<param name="266. GOOSE 11"/>
+	<param name="267. GOOSE 12"/>
+	<param name="268. GOOSE 13"/>
+	<param name="269. GOOSE 14"/>
+	<param name="270. GOOSE 15"/>
+	<param name="271. GOOSE 16"/>
+	<param name="272. GOOSE 17"/>
+	<param name="273. GOOSE 18"/>
+	<param name="274. GOOSE 19"/>
+	<param name="275. GOOSE 20"/>
+	<param name="276. GOOSE 21"/>
+	<param name="277. GOOSE 22"/>
+	<param name="278. GOOSE 23"/>
+	<param name="279. GOOSE 24"/>
+	<param name="280. GOOSE 25"/>
+	<param name="281. GOOSE 26"/>
+	<param name="282. GOOSE 27"/>
+	<param name="283. GOOSE 28"/>
+	<param name="284. GOOSE 29"/>
+	<param name="285. GOOSE 30"/>
+	<param name="286. GOOSE 31"/>
+	<param name="287. GOOSE 32"/>
+	<param name="288. GOOSE 33"/>
+	<param name="289. GOOSE 34"/>
+	<param name="290. Тест реле"/>
+	<param name="291. РПН:Неиспр.пл.лог"/>
+	<param name="292. РПН:Обрыв логом.верх"/>
+	<param name="293. РПН:Обрыв логом.сред"/>
+	<param name="294. РПН:Неправ.BCD"/>
+	<param name="295. РПН:Обрыв ток.петли"/>
+	<param name="296. РПН:Iпетли&gt;Iкон.ст"/>
+	<param name="297. РПН:BCD1"/>
+	<param name="298. РПН:BCD2"/>
+	<param name="299. РПН:BCD4"/>
+	<param name="300. РПН:BCD8"/>
+	<param name="301. РПН:BCD10"/>
+	<param name="302. РПН:BCD20"/>
+	<param name="303. РПН:BCD40"/>
+	<param name="304. РПН:Блок.по t"/>
+	<param name="305. РПН:Привод не готов"/>
+	<param name="306. РПН:Внеш.блок."/>
+	<param name="307. РПН:Низк.ур.масла"/>
+	<param name="308. РПН:Выс.ур.масла"/>
+	<param name="309. РПН:Автомат ПМ"/>
+	<param name="310. РПН:МУ приводом РПН"/>
+	<param name="311. РПН:Запр.убавить"/>
+	<param name="312. РПН:Запр.прибавить"/>
+	<param name="313. РПН:Переключение 1"/>
+	<param name="314. РПН:Переключение 2"/>
+	<param name="315. РПН:Переключение 3"/>
+	<param name="316. РПН:Неиспр.лог"/>
+	<param name="317. Режим:выключен"/>
+	<param name="318. Режим:тест-заблок."/>
+	<param name="319. Режим:тест"/>
+	<param name="320. Режим:заблокирован"/>
+	<param name="321. Режим:включен"/>
+</section>
+<section name="storeParams">
+	<groupDescriptors>
+		<groupDescriptor type="watch" requestedUpdateRate="60000" percentDeadband="1">
+			<include>
+				<add value="\AControl." />
+			</include>
+		</groupDescriptor>
+		<groupDescriptor type="demand" requestedUpdateRate="1000" triggerTag="Settings.LastSaveTime">
+			<include>
+				<add value="\ASettings." />
+				<add value="\ASets." />
+			</include>
+			<exclude>
+				<add value="Settings.CurrTime" />
+				<add value="Settings.LastSaveTime" />
+			</exclude>
+		</groupDescriptor>
+	</groupDescriptors>
+</section>
+
+</root>

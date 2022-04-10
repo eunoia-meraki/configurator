@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IED name="PDS">
+    <LDevice inst="SYS" desc="Системное"></LDevice>
+    <LDevice inst="CTRL" desc="Управление">
+        <LN lnClass="MMTR" type="MMTR_type">
+        <DO name="NamPlt" type="LPL_type" presCond="MONamPlt">
+            <DA name="paramRev" fc="ST" dchg="true" bType="INT32" presCond="O" event="1"/>
+            <DA name="valRev" fc="ST" dchg="true" bType="INT32" presCond="O" event="2"/>
+            <DA name="vendor" fc="DC" bType="VisString255" presCond="M" checked="true"/>
+            <DA name="swRev" fc="DC" bType="VisString255" presCond="M" checked="true"/>
+            <DA name="ldNs" fc="EX" bType="VisString255" presCond="MFln0"/>
+            <DA name="lnNs" fc="EX" bType="VisString255" presCond="MOlnNs"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="configRev" fc="DC" bType="VisString255" presCond="MOln0"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="Beh" type="ENS_type" presCond="M" checked="true">
+            <DA name="stVal" fc="ST" dchg="true" qchg="true" bType="Enum" type="_type" presCond="M" checked="true"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="M" checked="true"/>
+            <DA name="subEna" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subVal" fc="SV" bType="Enum" type="_type" presCond="MFsubst"/>
+            <DA name="subQ" fc="SV" bType="Quality" presCond="MFsubst"/>
+            <DA name="subID" fc="SV" bType="VisString64" presCond="MFsubst"/>
+            <DA name="blkEna" fc="BL" bType="BOOLEAN" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="Health" type="ENS_type" presCond="O">
+            <DA name="stVal" fc="ST" dchg="true" qchg="true" bType="Enum" type="_type" presCond="M" checked="true"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="M" checked="true"/>
+            <DA name="subEna" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subVal" fc="SV" bType="Enum" type="_type" presCond="MFsubst"/>
+            <DA name="subQ" fc="SV" bType="Quality" presCond="MFsubst"/>
+            <DA name="subID" fc="SV" bType="VisString64" presCond="MFsubst"/>
+            <DA name="blkEna" fc="BL" bType="BOOLEAN" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="Mir" type="SPS_type" presCond="MOcond">
+            <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN" presCond="M" checked="true"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="M" checked="true"/>
+            <DA name="subEna" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subVal" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subQ" fc="SV" bType="Quality" presCond="MFsubst"/>
+            <DA name="subID" fc="SV" bType="VisString64" presCond="MFsubst"/>
+            <DA name="blkEna" fc="BL" bType="BOOLEAN" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="Mod" type="ENC_type" presCond="O">
+            <DA name="origin" fc="ST" bType="Struct" type="Originator_type" presCond="O">
+                <BDA name="orCat" bType="Enum" type="OriginatorCategoryKind_type" presCond="M" checked="true"/>
+                <BDA name="orIdent" bType="Octet64" presCond="M"/>
+            </DA>
+            <DA name="ctlNum" fc="ST" bType="INT8U" presCond="O"/>
+            <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="_type" presCond="M" checked="true"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="M" checked="true"/>
+            <DA name="stSeld" fc="ST" dchg="true" bType="BOOLEAN" presCond="MOsbo"/>
+            <DA name="opRcvd" fc="OR" dchg="true" bType="BOOLEAN" presCond="O"/>
+            <DA name="opOk" fc="OR" dchg="true" bType="BOOLEAN" presCond="O"/>
+            <DA name="tOpOk" fc="OR" bType="Timestamp" presCond="O"/>
+            <DA name="subEna" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subVal" fc="SV" bType="Enum" type="_type" presCond="MFsubst"/>
+            <DA name="subQ" fc="SV" bType="Quality" presCond="MFsubst"/>
+            <DA name="subID" fc="SV" bType="VisString64" presCond="MFsubst"/>
+            <DA name="blkEna" fc="BL" bType="BOOLEAN" presCond="O"/>
+            <DA name="ctlModel" fc="CF" dchg="true" bType="Enum" type="CtlModelKind_type" presCond="M" checked="true"/>
+            <DA name="sboTimeout" fc="CF" dchg="true" bType="INT32U" presCond="MOsbo"/>
+            <DA name="sboClass" fc="CF" dchg="true" bType="Enum" type="SboClassKind_type" presCond="O"/>
+            <DA name="operTimeout" fc="CF" dchg="true" bType="INT32U" presCond="MOenhanced"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="InRef" type="ORG_type" presCond="Omulti">
+            <DA name="setSrcRef" fc="SP" dchg="true" bType="ObjRef" presCond="M" checked="true"/>
+            <DA name="setTstRef" fc="SP" dchg="true" bType="ObjRef" presCond="AllOrNonePerGroup"/>
+            <DA name="setSrcCB" fc="SP" dchg="true" bType="ObjRef" presCond="O"/>
+            <DA name="setTstCB" fc="SP" dchg="true" bType="ObjRef" presCond="OF"/>
+            <DA name="intAddr" fc="SP" dchg="true" bType="VisString255" presCond="O"/>
+            <DA name="tstEna" fc="SP" dchg="true" bType="BOOLEAN" presCond="AllOrNonePerGroup"/>
+            <DA name="purpose" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcExp" transient="true" type="SPS_type" presCond="O">
+            <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN" presCond="M" checked="true"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="M" checked="true"/>
+            <DA name="subEna" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subVal" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subQ" fc="SV" bType="Quality" presCond="MFsubst"/>
+            <DA name="subID" fc="SV" bType="VisString64" presCond="MFsubst"/>
+            <DA name="blkEna" fc="BL" bType="BOOLEAN" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcNxtTmms" type="INS_type" presCond="O">
+            <DA name="stVal" fc="ST" dchg="true" qchg="true" bType="INT32" presCond="M" checked="true"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="M" checked="true"/>
+            <DA name="subEna" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subVal" fc="SV" bType="INT32" presCond="MFsubst"/>
+            <DA name="subQ" fc="SV" bType="Quality" presCond="MFsubst"/>
+            <DA name="subID" fc="SV" bType="VisString64" presCond="MFsubst"/>
+            <DA name="blkEna" fc="BL" bType="BOOLEAN" presCond="O"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcStr" type="SPC_type" presCond="O">
+            <DA name="origin" fc="ST" bType="Struct" type="Originator_type" presCond="O">
+                <BDA name="orCat" bType="Enum" type="OriginatorCategoryKind_type" presCond="M" checked="true"/>
+                <BDA name="orIdent" bType="Octet64" presCond="M"/>
+            </DA>
+            <DA name="ctlNum" fc="ST" bType="INT8U" presCond="O"/>
+            <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN" presCond="MAllOrNonePerGroup"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="MAllOrNonePerGroup"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="MAllOrNonePerGroup"/>
+            <DA name="stSeld" fc="ST" dchg="true" bType="BOOLEAN" presCond="MOsbo"/>
+            <DA name="opRcvd" fc="OR" dchg="true" bType="BOOLEAN" presCond="O"/>
+            <DA name="opOk" fc="OR" dchg="true" bType="BOOLEAN" presCond="O"/>
+            <DA name="tOpOk" fc="OR" bType="Timestamp" presCond="O"/>
+            <DA name="subEna" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subVal" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subQ" fc="SV" bType="Quality" presCond="MFsubst"/>
+            <DA name="subID" fc="SV" bType="VisString64" presCond="MFsubst"/>
+            <DA name="blkEna" fc="BL" bType="BOOLEAN" presCond="O"/>
+            <DA name="pulseConfig" fc="CF" dchg="true" bType="Struct" type="PulseConfig_type" presCond="O">
+                <BDA name="cmdQual" bType="Enum" type="OutputSignalKind_type" presCond="M" checked="true"/>
+                <BDA name="onDur" bType="INT32U" presCond="M"/>
+                <BDA name="offDur" bType="INT32U" presCond="M"/>
+                <BDA name="numPls" bType="INT32U" presCond="M"/>
+            </DA>
+            <DA name="ctlModel" fc="CF" dchg="true" bType="Enum" type="CtlModelKind_type" presCond="M" checked="true"/>
+            <DA name="sboTimeout" fc="CF" dchg="true" bType="INT32U" presCond="MOsbo"/>
+            <DA name="sboClass" fc="CF" dchg="true" bType="Enum" type="SboClassKind_type" presCond="O"/>
+            <DA name="operTimeout" fc="CF" dchg="true" bType="INT32U" presCond="MOenhanced"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcMth" type="ENG_type" presCond="O">
+            <DA name="setVal" fc="SE" bType="Enum" type="_type" presCond="M" checked="true"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcMod" type="ENG_type" presCond="O">
+            <DA name="setVal" fc="SE" bType="Enum" type="_type" presCond="M" checked="true"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcIntvTyp" type="ENG_type" presCond="O">
+            <DA name="setVal" fc="SE" bType="Enum" type="_type" presCond="M" checked="true"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcIntvPer" type="ING_type" presCond="O">
+            <DA name="setVal" fc="SE" bType="INT32" presCond="M" checked="true"/>
+            <DA name="minVal" fc="CF" dchg="true" bType="INT32" presCond="O"/>
+            <DA name="maxVal" fc="CF" dchg="true" bType="INT32" presCond="O"/>
+            <DA name="stepSize" fc="CF" dchg="true" bType="INT32U" presCond="O"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="NumSubIntv" type="ING_type" presCond="O">
+            <DA name="setVal" fc="SE" bType="INT32" presCond="M" checked="true"/>
+            <DA name="minVal" fc="CF" dchg="true" bType="INT32" presCond="O"/>
+            <DA name="maxVal" fc="CF" dchg="true" bType="INT32" presCond="O"/>
+            <DA name="stepSize" fc="CF" dchg="true" bType="INT32U" presCond="O"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcRfTyp" type="ENG_type" presCond="O">
+            <DA name="setVal" fc="SE" bType="Enum" type="_type" presCond="M" checked="true"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcRfPer" type="ING_type" presCond="O">
+            <DA name="setVal" fc="SE" bType="INT32" presCond="M" checked="true"/>
+            <DA name="minVal" fc="CF" dchg="true" bType="INT32" presCond="O"/>
+            <DA name="maxVal" fc="CF" dchg="true" bType="INT32" presCond="O"/>
+            <DA name="stepSize" fc="CF" dchg="true" bType="INT32U" presCond="O"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="ClcSrc" type="ORG_type" presCond="F">
+            <DA name="setSrcRef" fc="SP" dchg="true" bType="ObjRef" presCond="M" checked="true"/>
+            <DA name="setTstRef" fc="SP" dchg="true" bType="ObjRef" presCond="AllOrNonePerGroup"/>
+            <DA name="setSrcCB" fc="SP" dchg="true" bType="ObjRef" presCond="O"/>
+            <DA name="setTstCB" fc="SP" dchg="true" bType="ObjRef" presCond="OF"/>
+            <DA name="intAddr" fc="SP" dchg="true" bType="VisString255" presCond="O"/>
+            <DA name="tstEna" fc="SP" dchg="true" bType="BOOLEAN" presCond="AllOrNonePerGroup"/>
+            <DA name="purpose" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="InSyn" type="ORG_type" presCond="O">
+            <DA name="setSrcRef" fc="SP" dchg="true" bType="ObjRef" presCond="M" checked="true"/>
+            <DA name="setTstRef" fc="SP" dchg="true" bType="ObjRef" presCond="AllOrNonePerGroup"/>
+            <DA name="setSrcCB" fc="SP" dchg="true" bType="ObjRef" presCond="O"/>
+            <DA name="setTstCB" fc="SP" dchg="true" bType="ObjRef" presCond="OF"/>
+            <DA name="intAddr" fc="SP" dchg="true" bType="VisString255" presCond="O"/>
+            <DA name="tstEna" fc="SP" dchg="true" bType="BOOLEAN" presCond="AllOrNonePerGroup"/>
+            <DA name="purpose" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="Blk" type="SPS_type" presCond="O">
+            <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN" presCond="M" checked="true"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="M" checked="true"/>
+            <DA name="subEna" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subVal" fc="SV" bType="BOOLEAN" presCond="MFsubst"/>
+            <DA name="subQ" fc="SV" bType="Quality" presCond="MFsubst"/>
+            <DA name="subID" fc="SV" bType="VisString64" presCond="MFsubst"/>
+            <DA name="blkEna" fc="BL" bType="BOOLEAN" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="BlkRef" type="ORG_type" presCond="Omulti">
+            <DA name="setSrcRef" fc="SP" dchg="true" bType="ObjRef" presCond="M" checked="true"/>
+            <DA name="setTstRef" fc="SP" dchg="true" bType="ObjRef" presCond="AllOrNonePerGroup"/>
+            <DA name="setSrcCB" fc="SP" dchg="true" bType="ObjRef" presCond="O"/>
+            <DA name="setTstCB" fc="SP" dchg="true" bType="ObjRef" presCond="OF"/>
+            <DA name="intAddr" fc="SP" dchg="true" bType="VisString255" presCond="O"/>
+            <DA name="tstEna" fc="SP" dchg="true" bType="BOOLEAN" presCond="AllOrNonePerGroup"/>
+            <DA name="purpose" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="TotVAh" type="BCR_type" presCond="O">
+            <DA name="actVal" fc="ST" dchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frVal" fc="ST" qchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frTm" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="pulsQty" fc="CF" dchg="true" bType="FLOAT32" presCond="M" checked="true"/>
+            <DA name="frEna" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="strTm" fc="CF" dchg="true" bType="Timestamp" presCond="O"/>
+            <DA name="frPd" fc="CF" dchg="true" bType="INT32" presCond="AllAtLeastOneGroup"/>
+            <DA name="frRs" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="TotWh" type="BCR_type" presCond="O">
+            <DA name="actVal" fc="ST" dchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frVal" fc="ST" qchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frTm" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="pulsQty" fc="CF" dchg="true" bType="FLOAT32" presCond="M" checked="true"/>
+            <DA name="frEna" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="strTm" fc="CF" dchg="true" bType="Timestamp" presCond="O"/>
+            <DA name="frPd" fc="CF" dchg="true" bType="INT32" presCond="AllAtLeastOneGroup"/>
+            <DA name="frRs" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="TotVArh" type="BCR_type" presCond="O">
+            <DA name="actVal" fc="ST" dchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frVal" fc="ST" qchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frTm" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="pulsQty" fc="CF" dchg="true" bType="FLOAT32" presCond="M" checked="true"/>
+            <DA name="frEna" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="strTm" fc="CF" dchg="true" bType="Timestamp" presCond="O"/>
+            <DA name="frPd" fc="CF" dchg="true" bType="INT32" presCond="AllAtLeastOneGroup"/>
+            <DA name="frRs" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="SupWh" type="BCR_type" presCond="O">
+            <DA name="actVal" fc="ST" dchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frVal" fc="ST" qchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frTm" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="pulsQty" fc="CF" dchg="true" bType="FLOAT32" presCond="M" checked="true"/>
+            <DA name="frEna" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="strTm" fc="CF" dchg="true" bType="Timestamp" presCond="O"/>
+            <DA name="frPd" fc="CF" dchg="true" bType="INT32" presCond="AllAtLeastOneGroup"/>
+            <DA name="frRs" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="SupVArh" type="BCR_type" presCond="O">
+            <DA name="actVal" fc="ST" dchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frVal" fc="ST" qchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frTm" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="pulsQty" fc="CF" dchg="true" bType="FLOAT32" presCond="M" checked="true"/>
+            <DA name="frEna" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="strTm" fc="CF" dchg="true" bType="Timestamp" presCond="O"/>
+            <DA name="frPd" fc="CF" dchg="true" bType="INT32" presCond="AllAtLeastOneGroup"/>
+            <DA name="frRs" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="DmdWh" type="BCR_type" presCond="O">
+            <DA name="actVal" fc="ST" dchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frVal" fc="ST" qchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frTm" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="pulsQty" fc="CF" dchg="true" bType="FLOAT32" presCond="M" checked="true"/>
+            <DA name="frEna" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="strTm" fc="CF" dchg="true" bType="Timestamp" presCond="O"/>
+            <DA name="frPd" fc="CF" dchg="true" bType="INT32" presCond="AllAtLeastOneGroup"/>
+            <DA name="frRs" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        <DO name="DmdVArh" type="BCR_type" presCond="O">
+            <DA name="actVal" fc="ST" dchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frVal" fc="ST" qchg="true" bType="INT64" presCond="AllAtLeastOneGroup"/>
+            <DA name="frTm" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="q" fc="ST" qchg="true" bType="Quality" presCond="M" checked="true"/>
+            <DA name="t" fc="ST" bType="Timestamp" presCond="AllAtLeastOneGroup"/>
+            <DA name="units" fc="CF" dchg="true" bType="Struct" type="Unit_type" presCond="O">
+                <BDA name="SIUnit" bType="Enum" type="SIUnitKind_type" presCond="M" checked="true"/>
+                <BDA name="multiplier" bType="Enum" type="MultiplierKind_type" presCond="O"/>
+            </DA>
+            <DA name="pulsQty" fc="CF" dchg="true" bType="FLOAT32" presCond="M" checked="true"/>
+            <DA name="frEna" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="strTm" fc="CF" dchg="true" bType="Timestamp" presCond="O"/>
+            <DA name="frPd" fc="CF" dchg="true" bType="INT32" presCond="AllAtLeastOneGroup"/>
+            <DA name="frRs" fc="CF" dchg="true" bType="BOOLEAN" presCond="AllAtLeastOneGroup"/>
+            <DA name="d" fc="DC" bType="VisString255" presCond="O"/>
+            <DA name="dU" fc="DC" bType="Unicode255" presCond="O"/>
+            <DA name="cdcName" fc="EX" bType="VisString255" presCond="O"/>
+            <DA name="dataNs" fc="EX" bType="VisString255" presCond="MOdataNs"/>
+        </DO>
+        </LN>
+    </LDevice>
+    <LDevice inst="PROT" desc="Защиты">
+        <LN lnClass="LLN0"></LN>
+    </LDevice>
+</IED>

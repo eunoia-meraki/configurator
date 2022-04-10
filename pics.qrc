@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pics/burger.png</file>
+        <file>pics/matrix.png</file>
+        <file>pics/model.png</file>
+        <file>pics/add.png</file>
+        <file>pics/add-blur.png</file>
+        <file>pics/dots.png</file>
+        <file>pics/dots-blur.png</file>
+        <file>pics/arrow-blur-down.png</file>
+        <file>pics/arrow-blur-right.png</file>
+        <file>pics/arrow-down.png</file>
+        <file>pics/arrow-right.png</file>
+        <file>pics/save.png</file>
+    </qresource>
+</RCC>

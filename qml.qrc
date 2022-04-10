@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>parametersarea/ParametersArea.qml</file>
+        <file>modelarea/BranchDelegate.qml</file>
+        <file>modelarea/RowDelegate.qml</file>
+        <file>modelarea/MyItemDelegate.qml</file>
+        <file>modelarea/Header.qml</file>
+        <file>modelarea/ModelArea.qml</file>
+        <file>modelarea/ContextMenu.qml</file>
+        <file>modelarea/RowButton.qml</file>
+        <file>drawer/MyDrawer.qml</file>
+        <file>toolbar/MyPopup.qml</file>
+        <file>toolbar/MyToolBar.qml</file>
+        <file>mytypes/MyMenu.qml</file>
+        <file>mytypes/MyTextField.qml</file>
+        <file>mappingview/MappingView.qml</file>
+        <file>datamodelview/DataModelView.qml</file>
+    </qresource>
+</RCC>

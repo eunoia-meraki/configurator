@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>nsd/IEC_61850-7-2_2007B3.nsd</file>
+        <file>nsd/IEC_61850-7-3_2007B3.nsd</file>
+        <file>nsd/IEC_61850-7-4_2007B3.nsd</file>
+    </qresource>
+</RCC>
